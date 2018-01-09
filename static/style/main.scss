@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+$press-font: 'Press Start 2P', cursive;
+@import url('https://fonts.googleapis.com/css?family=Lato');
+$lato-font: 'Lato', sans-serif;
+
+$dark-gray-color: #666666;
+$dark-blue-color: #1c3144;
+$blue-color: #39a5db;
+$gray-color: #d8dbe2;
+$red-wine-color: #591728;
+
+* {
+	font: 101% $lato-font;
+	margin: 0;
+	padding: 0;
+}
+
+.lato {
+	font: 100% $lato-font;
+}
+
+.press2p {
+	font: 95% $press-font;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+body {
+	display: flex;
+	flex-flow: column;
+	text-align: center;
+
+	#superior {
+		display: flex;
+		flex-flow: column;
+		background-color: $dark-blue-color;
+
+		nav {
+			background-color: $dark-gray-color;
+			color: white;
+
+			ul {
+				display: flex;
+				justify-content: space-around;
+				margin: 1% 25%;
+				list-style: none;
+			}
+		}
+	}
+
+	.info {
+		color: white;
+		margin: 10px 10%;
+		padding: 0px 5%;
+	}
+
+	#medio {
+		display: flex;
+		flex-flow: column;
+		background-color: $red-wine-color;
+
+		div {
+			padding: 10px 0px;
+		}
+
+		#formacion {
+			width: 50%;
+			padding: 10px 10px 10px 25%;
+			background-color: $gray-color;
+			margin-bottom: 30px;
+		}
+
+		#gamejam {
+			width: 50%;
+			padding: 10px 24% 10px 1%;
+			margin-left: 25%;
+			background-color: $gray-color;
+		}
+
+		#colaboradores {
+			background-color: $gray-color;
+			margin: 30px 0px;
+			padding: 10px 20%;
+		}
+
+		#premios {
+			background-color: $gray-color;
+			margin: 0px 0px 30px 0px;
+			padding: 0px 5%;
+		}
+	}
+	#inferior {
+		display: flex;
+		flex-flow: column;
+		background-color: $dark-blue-color;
+		color: white;
+		padding-bottom: 30px;
+
+		div {
+			padding: 10px;
+		}
+
+		#pjsfoto {
+			display: flex;
+			flex-flow: row;
+			justify-content: space-around;
+			align-items: center;
+			margin: 0px 20%;
+
+			i {
+				margin-right: 10px;
+				font-size: 1.7em;
+			}
+
+			#campos {
+				width: 85%;
+				p {
+					width: 100%;
+					margin: 10px 0px;
+				}
+				input {
+					color: white;
+					margin-left: 10px;
+					padding: 3px;
+					border: 0;
+					outline: 0;
+					background: transparent;
+					border-bottom: 1px solid white;
+					transition: 0.8s ease-out;
+
+					&:focus {
+						box-shadow: inset 400px 0 0 0 white;
+  						color: black;
+					}
+				}
+			}
+			#pjs {
+				width: 40%;
+			}
+
+		}
+
+		#submitBox {
+			font-family: "RPGAwesome", $press-font;
+			border-bottom: 1px solid white;
+			transition: 0.8s ease-out;
+			color: white;
+			border: 0;
+			outline: 0;
+			background: transparent;
+			padding: 10px;
+
+			&:hover {
+				box-shadow: inset 0px -80px 0px 0px white;
+				color: black;
+			}
+
+			&:focus {
+				color: white;
+				transition: 0s;
+				box-shadow: inset 0px -80px 0px 0px $red-wine-color;
+			}
+		}
+	}
+}
+
