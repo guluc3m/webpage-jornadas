@@ -15,6 +15,9 @@ a {
   text-decoration: none;
   color: inherit; }
 
+i {
+  font-size: 1.7em; }
+
 body {
   display: flex;
   flex-flow: column;
@@ -41,16 +44,26 @@ body {
     background-color: #591728; }
     body #medio div {
       padding: 10px 0px; }
-    body #medio #formacion {
-      width: 50%;
-      padding: 10px 10px 10px 25%;
-      background-color: #d8dbe2;
+    body #medio #gamejam_info {
+      display: flex;
+      flex-flow: row;
+      align-items: stretch;
+      justify-content: space-between;
       margin-bottom: 30px; }
-    body #medio #gamejam {
-      width: 50%;
-      padding: 10px 24% 10px 1%;
-      margin-left: 25%;
-      background-color: #d8dbe2; }
+      body #medio #gamejam_info #formacion {
+        width: 42%;
+        padding: 10px 2%;
+        background-color: #d8dbe2;
+        text-align: right; }
+        body #medio #gamejam_info #formacion p {
+          margin-left: 30%; }
+      body #medio #gamejam_info #gamejam {
+        width: 42%;
+        padding: 10px 2%;
+        background-color: #d8dbe2;
+        text-align: left; }
+        body #medio #gamejam_info #gamejam p {
+          margin-right: 30%; }
     body #medio #colaboradores {
       background-color: #d8dbe2;
       margin: 30px 0px;
@@ -74,8 +87,7 @@ body {
       align-items: center;
       margin: 0px 20%; }
       body #inferior #pjsfoto i {
-        margin-right: 10px;
-        font-size: 1.7em; }
+        margin-right: 10px; }
       body #inferior #pjsfoto #campos {
         width: 85%; }
         body #inferior #pjsfoto #campos p {
@@ -95,6 +107,10 @@ body {
             color: black; }
       body #inferior #pjsfoto #pjs {
         width: 40%; }
+        body #inferior #pjsfoto #pjs i {
+          opacity: 0;
+          transition: 0.5s ease-in;
+          font-size: 7em; }
     body #inferior #submitBox {
       font-family: "RPGAwesome", "Press Start 2P", cursive;
       border-bottom: 1px solid white;
@@ -106,10 +122,12 @@ body {
       padding: 10px; }
       body #inferior #submitBox:hover {
         box-shadow: inset 0px -80px 0px 0px white;
-        color: black; }
+        color: black;
+        cursor: pointer; }
       body #inferior #submitBox:focus {
         color: white;
         transition: 0s;
-        box-shadow: inset 0px -80px 0px 0px #591728; }
+        box-shadow: inset 0px -80px 0px 0px #591728;
+        cursor: pointer; }
 
 /*# sourceMappingURL=main.css.map */

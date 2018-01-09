@@ -28,6 +28,10 @@ a {
 	color: inherit;
 }
 
+i {
+	font-size: 1.7em;
+}
+
 body {
 	display: flex;
 	flex-flow: column;
@@ -66,18 +70,34 @@ body {
 			padding: 10px 0px;
 		}
 
-		#formacion {
-			width: 50%;
-			padding: 10px 10px 10px 25%;
-			background-color: $gray-color;
+		#gamejam_info {
+			display: flex;
+			flex-flow: row;
+			align-items: stretch;
+			justify-content: space-between;
 			margin-bottom: 30px;
-		}
 
-		#gamejam {
-			width: 50%;
-			padding: 10px 24% 10px 1%;
-			margin-left: 25%;
-			background-color: $gray-color;
+			#formacion {
+				width: 42%;
+				padding: 10px 2%;
+				background-color: $gray-color;
+				text-align: right;
+				p {
+					margin-left: 30%;
+					text-align: justify;
+				}
+			}
+
+			#gamejam {
+				width: 42%;
+				padding: 10px 2%;
+				background-color: $gray-color;
+				text-align: left;
+				p {
+					margin-right: 30%;
+					text-align: justify;
+				}
+			}
 		}
 
 		#colaboradores {
@@ -112,7 +132,6 @@ body {
 
 			i {
 				margin-right: 10px;
-				font-size: 1.7em;
 			}
 
 			#campos {
@@ -139,8 +158,12 @@ body {
 			}
 			#pjs {
 				width: 40%;
+				i {
+					opacity: 0;
+					transition: 0.5s ease-in;
+					font-size: 7em;
+				}
 			}
-
 		}
 
 		#submitBox {
@@ -156,12 +179,14 @@ body {
 			&:hover {
 				box-shadow: inset 0px -80px 0px 0px white;
 				color: black;
+				cursor: pointer;
 			}
 
 			&:focus {
 				color: white;
 				transition: 0s;
 				box-shadow: inset 0px -80px 0px 0px $red-wine-color;
+				cursor: pointer;
 			}
 		}
 	}
