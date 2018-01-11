@@ -22,14 +22,26 @@ body {
   display: flex;
   flex-flow: column;
   text-align: center; }
-  body #superior {
-    display: flex;
+  body header {
+    background: #1c3144;
+    background: url(https://images.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.pHz_04fcr9abI0abYoBTxAHaFj%26pid%3D15.1&f=1) center bottom fixed;
+    background-size: cover;
     flex-flow: column;
-    background-color: #1c3144; }
-    body #superior nav {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative; }
+    body header #logo {
+      margin-top: auto;
+      background: #0000001a; }
+      body header #logo img {
+        width: 45%; }
+    body header nav {
       background-color: #666666;
-      color: white; }
-      body #superior nav ul {
+      color: white;
+      margin-top: auto; }
+      body header nav ul {
         display: flex;
         justify-content: space-around;
         margin: 1% 25%;
@@ -38,99 +50,100 @@ body {
     color: white;
     margin: 10px 10%;
     padding: 0px 5%; }
-  body #medio {
+  body #primero {
     display: flex;
     flex-flow: column;
     background-color: #591728; }
-    body #medio div {
+    body #primero div {
       padding: 10px 0px; }
-    body #medio #gamejam_info {
+    body #primero #gamejam_info {
       display: flex;
       flex-flow: row;
       align-items: stretch;
       justify-content: space-between;
       margin-bottom: 30px; }
-      body #medio #gamejam_info #formacion {
+      body #primero #gamejam_info #formacion {
         width: 42%;
         padding: 10px 2%;
         background-color: #d8dbe2;
         text-align: right; }
-        body #medio #gamejam_info #formacion p {
+        body #primero #gamejam_info #formacion p {
           margin-left: 30%;
           text-align: justify; }
-      body #medio #gamejam_info #gamejam {
+      body #primero #gamejam_info #gamejam {
         width: 42%;
         padding: 10px 2%;
         background-color: #d8dbe2;
         text-align: left; }
-        body #medio #gamejam_info #gamejam p {
+        body #primero #gamejam_info #gamejam p {
           margin-right: 30%;
           text-align: justify; }
-    body #medio #colaboradores {
+    body #primero #colaboradores {
       background-color: #d8dbe2;
       margin: 30px 0px;
       padding: 10px 20%; }
-    body #medio #premios {
+    body #primero #premios {
       background-color: #d8dbe2;
       margin: 0px 0px 30px 0px;
       padding: 0px 5%; }
-  body #inferior {
+  body #segundo {
     display: flex;
     flex-flow: column;
     background-color: #1c3144;
     color: white;
     padding-bottom: 30px; }
-    body #inferior div {
-      padding: 10px; }
-    body #inferior #pjsfoto {
-      display: flex;
-      flex-flow: row;
-      justify-content: space-around;
-      align-items: center;
-      margin: 0px 20%; }
-      body #inferior #pjsfoto i {
-        margin-right: 10px; }
-      body #inferior #pjsfoto #campos {
-        width: 85%; }
-        body #inferior #pjsfoto #campos p {
-          width: 100%;
-          margin: 10px 0px; }
-        body #inferior #pjsfoto #campos input {
-          color: white;
-          margin-left: 10px;
-          padding: 3px;
-          border: 0;
-          outline: 0;
-          background: transparent;
-          border-bottom: 1px solid white;
-          transition: 0.8s ease-out; }
-          body #inferior #pjsfoto #campos input:focus {
-            box-shadow: inset 400px 0 0 0 white;
-            color: black; }
-      body #inferior #pjsfoto #pjs {
-        width: 40%; }
-        body #inferior #pjsfoto #pjs i {
-          opacity: 0;
-          transition: 0.5s ease-in;
-          font-size: 7em; }
-    body #inferior .submitBox {
+    body #segundo #pjs {
+      margin: 15px 30px; }
+      body #segundo #pjs i {
+        margin: 0px 2%;
+        font-size: 5em; }
+    body #segundo .submitBox {
       font-family: "Press Start 2P", cursive;
       border-bottom: 1px solid white;
       transition: 0.8s ease-out;
-      color: white;
+      color: black;
       border: 0;
       outline: 0;
-      background: transparent;
+      background: white;
+      margin-top: 10px;
       padding: 10px;
       cursor: pointer; }
-      body #inferior .submitBox:hover {
-        box-shadow: inset 0px -80px 0px 0px white;
-        color: black;
-        cursor: pointer; }
-      body #inferior .submitBox:focus {
-        color: white;
-        transition: 0s;
+      body #segundo .submitBox:hover {
         box-shadow: inset 0px -80px 0px 0px #591728;
+        color: white;
         cursor: pointer; }
+      body #segundo .submitBox:focus {
+        color: black;
+        transition: 0s;
+        box-shadow: inset 0px -80px 0px 0px white;
+        cursor: pointer; }
+  body footer .wrapper {
+    margin: 20px auto; }
+    body footer .wrapper .media {
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+      body footer .wrapper .media img {
+        max-width: 50px; }
+      body footer .wrapper .media ul {
+        display: inline-flex;
+        align-items: center;
+        list-style: none; }
+        body footer .wrapper .media ul li {
+          margin-right: 20px; }
+      body footer .wrapper .media .fab {
+        font-size: 2em;
+        margin-right: 20px; }
+      body footer .wrapper .media .fa-github:hover {
+        transition: 0.5s ease-in-out;
+        color: #2dba4e; }
+      body footer .wrapper .media .fa-youtube:hover {
+        transition: 0.5s ease-in-out;
+        color: #cc181e; }
+      body footer .wrapper .media .fa-twitter:hover {
+        transition: 0.5s ease-in-out;
+        color: #00b2ff; }
+  body footer .legal {
+    margin: 10px auto; }
 
 /*# sourceMappingURL=main.css.map */

@@ -37,14 +37,31 @@ body {
 	flex-flow: column;
 	text-align: center;
 
-	#superior {
-		display: flex;
+	header {
+		background: $dark-blue-color;
+		background: url(https://images.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.pHz_04fcr9abI0abYoBTxAHaFj%26pid%3D15.1&f=1) center bottom fixed;
+		background-size: cover;
 		flex-flow: column;
-		background-color: $dark-blue-color;
+		min-height: 70vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		position: relative;
+
+		#logo {
+			margin-top: auto;
+			background: #0000001a;
+
+			img {
+				width: 45%;
+			}
+		}
+
 
 		nav {
 			background-color: $dark-gray-color;
 			color: white;
+			margin-top: auto;
 
 			ul {
 				display: flex;
@@ -61,7 +78,7 @@ body {
 		padding: 0px 5%;
 	}
 
-	#medio {
+	#primero {
 		display: flex;
 		flex-flow: column;
 		background-color: $red-wine-color;
@@ -112,57 +129,19 @@ body {
 			padding: 0px 5%;
 		}
 	}
-	#inferior {
+
+	#segundo {
 		display: flex;
 		flex-flow: column;
 		background-color: $dark-blue-color;
 		color: white;
 		padding-bottom: 30px;
 
-		div {
-			padding: 10px;
-		}
-
-		#pjsfoto {
-			display: flex;
-			flex-flow: row;
-			justify-content: space-around;
-			align-items: center;
-			margin: 0px 20%;
-
+		#pjs {
+			margin: 15px 30px;
 			i {
-				margin-right: 10px;
-			}
-
-			#campos {
-				width: 85%;
-				p {
-					width: 100%;
-					margin: 10px 0px;
-				}
-				input {
-					color: white;
-					margin-left: 10px;
-					padding: 3px;
-					border: 0;
-					outline: 0;
-					background: transparent;
-					border-bottom: 1px solid white;
-					transition: 0.8s ease-out;
-
-					&:focus {
-						box-shadow: inset 400px 0 0 0 white;
-  						color: black;
-					}
-				}
-			}
-			#pjs {
-				width: 40%;
-				i {
-					opacity: 0;
-					transition: 0.5s ease-in;
-					font-size: 7em;
-				}
+				margin: 0px 2%;
+				font-size: 5em;
 			}
 		}
 
@@ -170,26 +149,77 @@ body {
 			font-family: $press-font;
 			border-bottom: 1px solid white;
 			transition: 0.8s ease-out;
-			color: white;
+			color: black;
 			border: 0;
 			outline: 0;
-			background: transparent;
+			background: white;
+			margin-top: 10px;
 			padding: 10px;
 			cursor:pointer;
 
 			&:hover {
-				box-shadow: inset 0px -80px 0px 0px white;
-				color: black;
+				box-shadow: inset 0px -80px 0px 0px $red-wine-color;
+				color: white;
 				cursor: pointer;
 			}
 
 			&:focus {
-				color: white;
+				color: black;
 				transition: 0s;
-				box-shadow: inset 0px -80px 0px 0px $red-wine-color;
+				box-shadow: inset 0px -80px 0px 0px white;
 				cursor: pointer;
 			}
 		}
 	}
+
+	footer {
+		.wrapper {
+			margin: 20px auto;
+
+			.media {
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+
+				img {
+					max-width: 50px;
+				}
+
+				ul {
+					display: inline-flex;
+					align-items: center;
+					list-style: none;
+
+					li {
+						margin-right: 20px;
+					}
+				}
+
+				.fab {
+					font-size: 2em;
+					margin-right: 20px;
+				}
+
+				.fa-github:hover {
+					transition: 0.5s ease-in-out;
+					color: #2dba4e;
+				}
+
+				.fa-youtube:hover {
+					transition: 0.5s ease-in-out;
+					color: #cc181e;
+				}
+
+				.fa-twitter:hover {
+					transition: 0.5s ease-in-out;
+					color: #00b2ff;
+				}
+			}
+		}
+
+		.legal {
+			margin: 10px auto;
+		}
+	}	
 }
 
