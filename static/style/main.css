@@ -56,14 +56,16 @@ body {
         background-color: #d8dbe2;
         text-align: right; }
         body #medio #gamejam_info #formacion p {
-          margin-left: 30%; }
+          margin-left: 30%;
+          text-align: justify; }
       body #medio #gamejam_info #gamejam {
         width: 42%;
         padding: 10px 2%;
         background-color: #d8dbe2;
         text-align: left; }
         body #medio #gamejam_info #gamejam p {
-          margin-right: 30%; }
+          margin-right: 30%;
+          text-align: justify; }
     body #medio #colaboradores {
       background-color: #d8dbe2;
       margin: 30px 0px;
@@ -111,20 +113,21 @@ body {
           opacity: 0;
           transition: 0.5s ease-in;
           font-size: 7em; }
-    body #inferior #submitBox {
-      font-family: "RPGAwesome", "Press Start 2P", cursive;
+    body #inferior .submitBox {
+      font-family: "Press Start 2P", cursive;
       border-bottom: 1px solid white;
       transition: 0.8s ease-out;
       color: white;
       border: 0;
       outline: 0;
       background: transparent;
-      padding: 10px; }
-      body #inferior #submitBox:hover {
+      padding: 10px;
+      cursor: pointer; }
+      body #inferior .submitBox:hover {
         box-shadow: inset 0px -80px 0px 0px white;
         color: black;
         cursor: pointer; }
-      body #inferior #submitBox:focus {
+      body #inferior .submitBox:focus {
         color: white;
         transition: 0s;
         box-shadow: inset 0px -80px 0px 0px #591728;

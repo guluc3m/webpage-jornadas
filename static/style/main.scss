@@ -166,8 +166,8 @@ body {
 			}
 		}
 
-		#submitBox {
-			font-family: "RPGAwesome", $press-font;
+		.submitBox {
+			font-family: $press-font;
 			border-bottom: 1px solid white;
 			transition: 0.8s ease-out;
 			color: white;
@@ -175,6 +175,7 @@ body {
 			outline: 0;
 			background: transparent;
 			padding: 10px;
+			cursor:pointer;
 
 			&:hover {
 				box-shadow: inset 0px -80px 0px 0px white;
