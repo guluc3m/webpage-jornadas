@@ -54,6 +54,7 @@ body {
 
 			img {
 				width: 45%;
+				height: 100%;
 			}
 		}
 
@@ -74,8 +75,13 @@ body {
 
 	.info {
 		color: white;
-		margin: 10px 10%;
+		margin: 30px 10%;
 		padding: 0px 5%;
+	}
+
+	.intro {
+		max-width: 85%;
+		margin: auto;
 	}
 
 	#primero {
@@ -122,12 +128,6 @@ body {
 			margin: 30px 0px;
 			padding: 10px 20%;
 		}
-
-		#premios {
-			background-color: $gray-color;
-			margin: 0px 0px 30px 0px;
-			padding: 0px 5%;
-		}
 	}
 
 	#segundo {
@@ -142,6 +142,61 @@ body {
 			i {
 				margin: 0px 2%;
 				font-size: 5em;
+			}
+		}
+
+		#conditions {
+			list-style: none;
+			text-align: justify;
+			font-size: 80%;
+			max-width: 70%;
+			margin: 25px auto;
+
+			li {
+				margin: 5px auto;
+			}
+
+			.press2p {
+				font-family: $press-font;
+
+				.remark {
+					color: #89fe5d;
+				}
+			}
+		}
+
+		#premios {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-evenly;
+			margin: 30px auto 0px;
+
+			.prize {
+				list-style: none;
+				font-size: 0.8em;
+				max-width: 180px;
+				margin: 15px auto;
+
+				.first_prize {
+					color: gold;
+					font-size: 2em;
+				}
+
+				.second_prize {
+					color: silver;
+					font-size: 2em;
+				}
+
+				.third_prize {
+					color: #B87333;
+					font-size: 2em;
+				}
+
+				img {
+					margin: 20px auto 10px;
+					max-width: 180px;
+					width: 100%;
+				}
 			}
 		}
 
@@ -201,17 +256,17 @@ body {
 				}
 
 				.fa-github:hover {
-					transition: 0.5s ease-in-out;
+					transition: 0.4s ease-in-out;
 					color: #2dba4e;
 				}
 
 				.fa-youtube:hover {
-					transition: 0.5s ease-in-out;
+					transition: 0.4s ease-in-out;
 					color: #cc181e;
 				}
 
 				.fa-twitter:hover {
-					transition: 0.5s ease-in-out;
+					transition: 0.4s ease-in-out;
 					color: #00b2ff;
 				}
 			}

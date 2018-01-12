@@ -36,7 +36,8 @@ body {
       margin-top: auto;
       background: #0000001a; }
       body header #logo img {
-        width: 45%; }
+        width: 45%;
+        height: 100%; }
     body header nav {
       background-color: #666666;
       color: white;
@@ -48,8 +49,11 @@ body {
         list-style: none; }
   body .info {
     color: white;
-    margin: 10px 10%;
+    margin: 30px 10%;
     padding: 0px 5%; }
+  body .intro {
+    max-width: 85%;
+    margin: auto; }
   body #primero {
     display: flex;
     flex-flow: column;
@@ -82,10 +86,6 @@ body {
       background-color: #d8dbe2;
       margin: 30px 0px;
       padding: 10px 20%; }
-    body #primero #premios {
-      background-color: #d8dbe2;
-      margin: 0px 0px 30px 0px;
-      padding: 0px 5%; }
   body #segundo {
     display: flex;
     flex-flow: column;
@@ -97,6 +97,41 @@ body {
       body #segundo #pjs i {
         margin: 0px 2%;
         font-size: 5em; }
+    body #segundo #conditions {
+      list-style: none;
+      text-align: justify;
+      font-size: 80%;
+      max-width: 70%;
+      margin: 25px auto; }
+      body #segundo #conditions li {
+        margin: 5px auto; }
+      body #segundo #conditions .press2p {
+        font-family: "Press Start 2P", cursive; }
+        body #segundo #conditions .press2p .remark {
+          color: #89fe5d; }
+    body #segundo #premios {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+      margin: 30px auto 0px; }
+      body #segundo #premios .prize {
+        list-style: none;
+        font-size: 0.8em;
+        max-width: 180px;
+        margin: 15px auto; }
+        body #segundo #premios .prize .first_prize {
+          color: gold;
+          font-size: 2em; }
+        body #segundo #premios .prize .second_prize {
+          color: silver;
+          font-size: 2em; }
+        body #segundo #premios .prize .third_prize {
+          color: #B87333;
+          font-size: 2em; }
+        body #segundo #premios .prize img {
+          margin: 20px auto 10px;
+          max-width: 180px;
+          width: 100%; }
     body #segundo .submitBox {
       font-family: "Press Start 2P", cursive;
       border-bottom: 1px solid white;
@@ -135,13 +170,13 @@ body {
         font-size: 2em;
         margin-right: 20px; }
       body footer .wrapper .media .fa-github:hover {
-        transition: 0.5s ease-in-out;
+        transition: 0.4s ease-in-out;
         color: #2dba4e; }
       body footer .wrapper .media .fa-youtube:hover {
-        transition: 0.5s ease-in-out;
+        transition: 0.4s ease-in-out;
         color: #cc181e; }
       body footer .wrapper .media .fa-twitter:hover {
-        transition: 0.5s ease-in-out;
+        transition: 0.4s ease-in-out;
         color: #00b2ff; }
   body footer .legal {
     margin: 10px auto; }
