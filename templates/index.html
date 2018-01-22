@@ -19,26 +19,29 @@
         <div id="logo">
             <img src="static/images/logo_jamon.png">
         </div>
-        <nav>
-            <ul>
-                <li><a href="#primero">Información</a></li>
-                <li><a href="#segundo">Inscripción</a></li>
-                <li><a href="https://gul.es" target="_blank">GUL UC3M</a></li>
-            </ul>
+        <nav class="shadow">
+            <a href="#primero">Información</a>
+            <a href="#segundo">Inscripción</a>
+            <a href="https://gul.es" target="_blank">GUL UC3M</a>
         </nav>
     </header>
-    <main>
+    <main class="shadow">
         <div id="primero">
             <div class="info"> OBJETIVO DE LA GUL JAMÓN. <br> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
             </div>
             <div id="gamejam_info">
-                <div id="formacion"> <i class="ra ra-wooden-sign"></i> INFO SOBRE FORMACION <br> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <div class="shadow" id="formacion"> 
+                    <div class="title"><i class="ra ra-wooden-sign"></i> INFO SOBRE FORMACION</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                 </div>
-                <div id="gamejam"> INFO SOBRE LA GAME JAM <i class="ra ra-gamepad-cross"></i> <br> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <div class="shadow" id="gamejam">
+                    <div class="title">INFO SOBRE LA GAME JAM <i class="ra ra-gamepad-cross"></i></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                 </div>
             </div>
-            <div id="colaboradores">
-                <i class="ra ra-double-team"></i> ¿Colaboradores? <br> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+            <div class="shadow" id="colaboradores">
+                <div class="title"><i class="ra ra-double-team"></i> ¿Colaboradores?</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
             </div>
         </div>
         <div id="segundo">
@@ -55,19 +58,25 @@
                 <!-- https://shop.pimoroni.com/products/raspberry-pi-zero-w -->
                 <div id="premios">
                     <ul class="prize">
-                        <li class="press2p"><i class="ra ra-trophy first_prize"></i></li>
-                        <li><img src="static/images/prize1.jpg" alt="Primer premio: kit Raspberry-pi-zero-w"></li>
-                        <li class="press2p">Kit Raspberry Pi Zero W</li>
+                        <li class="press2p badFix"><i class="ra ra-trophy first_prize"></i></li>
+                        <ul>
+                            <li><img src="static/images/prize1.jpg" alt="Primer premio: kit Raspberry-pi-zero-w"></li>
+                            <li class="press2p">Kit Raspberry Pi Zero W</li>
+                        </ul>
                     </ul>
                     <ul class="prize">
-                        <li class="press2p"><i class="ra ra-trophy second_prize"></i></li>
-                        <li><img src="static/images/prize2.jpg" alt="Segundo premio: Raspberry-pi-zero-w con adaptadores"></li>
-                        <li class="press2p">Raspberry Pi Zero W + Adaptadores</li>
+                        <li class="press2p badFix"><i class="ra ra-trophy second_prize"></i></li>
+                        <ul>
+                            <li><img src="static/images/prize2.jpg" alt="Segundo premio: Raspberry-pi-zero-w con adaptadores"></li>
+                            <li class="press2p">Raspberry Pi Zero W + Adaptadores</li>
+                        </ul>
                     </ul>
                     <ul class="prize">
-                        <li class="press2p"><i class="ra ra-trophy third_prize"></i></li>
-                        <li><img src="static/images/prize3.jpg" alt="Tercero premio: Raspberry-pi-zero-w"></li>
-                        <li class="press2p">Raspberry Pi Zero W</li>
+                        <li class="press2p badFix"><i class="ra ra-trophy third_prize"></i></li>
+                        <ul>
+                            <li><img src="static/images/prize3.jpg" alt="Tercero premio: Raspberry-pi-zero-w"></li>
+                            <li class="press2p">Raspberry Pi Zero W</li>
+                        </ul>
                     </ul>
                 </div>
             </div>

@@ -11,12 +11,22 @@
 .press2p {
   font: 95% "Press Start 2P", cursive; }
 
+.shadow {
+  box-shadow: 0px 0px 10px 0px black; }
+
+.title {
+  background-color: #39a5db;
+  color: white; }
+
 a {
   text-decoration: none;
   color: inherit; }
 
 i {
   font-size: 1.7em; }
+
+ul {
+  list-style: none; }
 
 body {
   display: flex;
@@ -33,20 +43,26 @@ body {
     justify-content: center;
     position: relative; }
     body header #logo {
-      margin-top: auto;
-      background: #0000001a; }
+      margin-top: auto; }
       body header #logo img {
-        width: 45%;
+        width: 30%;
         height: 100%; }
     body header nav {
-      background-color: #666666;
-      color: white;
-      margin-top: auto; }
+      background-color: #d8dbe2;
+      color: black;
+      margin-top: auto;
+      min-height: 10vh;
+      max-height: 10vh;
+      align-items: center;
+      display: flex;
+      justify-content: space-evenly;
+      font-size: 1.2em;
+      flex-flow: row;
+      padding: 0 14%; }
       body header nav ul {
         display: flex;
         justify-content: space-around;
-        margin: 1% 25%;
-        list-style: none; }
+        margin: 1% 25%; }
   body .info {
     color: white;
     margin: 30px 10%;
@@ -69,6 +85,7 @@ body {
       body #primero #gamejam_info #formacion {
         width: 42%;
         padding: 10px 2%;
+        padding: 0 !important;
         background-color: #d8dbe2;
         text-align: right; }
         body #primero #gamejam_info #formacion p {
@@ -77,6 +94,7 @@ body {
       body #primero #gamejam_info #gamejam {
         width: 42%;
         padding: 10px 2%;
+        padding: 0 !important;
         background-color: #d8dbe2;
         text-align: left; }
         body #primero #gamejam_info #gamejam p {
@@ -85,7 +103,8 @@ body {
     body #primero #colaboradores {
       background-color: #d8dbe2;
       margin: 30px 0px;
-      padding: 10px 20%; }
+      padding: 10px 20%;
+      padding: 0 !important; }
   body #segundo {
     display: flex;
     flex-flow: column;
@@ -98,7 +117,6 @@ body {
         margin: 0px 2%;
         font-size: 5em; }
     body #segundo #conditions {
-      list-style: none;
       text-align: justify;
       font-size: 80%;
       max-width: 70%;
@@ -115,10 +133,15 @@ body {
       justify-content: space-evenly;
       margin: 30px auto 0px; }
       body #segundo #premios .prize {
-        list-style: none;
         font-size: 0.8em;
-        max-width: 180px;
-        margin: 15px auto; }
+        max-width: 210px;
+        margin: 15px auto;
+        background: #39a5db; }
+        body #segundo #premios .prize ul {
+          padding: 0px 20px 15px; }
+        body #segundo #premios .prize .badFix {
+          background-color: #1c3144;
+          padding-bottom: 15px; }
         body #segundo #premios .prize .first_prize {
           color: gold;
           font-size: 2em; }
@@ -162,8 +185,7 @@ body {
         max-width: 50px; }
       body footer .wrapper .media ul {
         display: inline-flex;
-        align-items: center;
-        list-style: none; }
+        align-items: center; }
         body footer .wrapper .media ul li {
           margin-right: 20px; }
       body footer .wrapper .media .fab {
