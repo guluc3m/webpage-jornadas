@@ -35,6 +35,9 @@ b {
 
 ul {
   list-style: none; }
+  ul.withDots {
+    list-style: circle !important;
+    margin-left: 40px; }
 
 body {
   display: flex;
@@ -93,33 +96,27 @@ body {
       flex-flow: column;
       align-items: stretch;
       justify-content: space-between;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      background: url(../images/backgroundinfo.png) center fixed; }
+      body #primero #gamejam_info .title {
+        text-align: center; }
+      body #primero #gamejam_info .panel-text {
+        text-align: justify;
+        padding: 20px; }
       body #primero #gamejam_info #left-panel {
-        width: 80%;
+        width: 50%;
         padding: 0 !important;
         background-color: #d8dbe2;
-        text-align: right;
-        margin-bottom: 60px; }
-        body #primero #gamejam_info #left-panel .title {
-          padding-right: 20%; }
-        body #primero #gamejam_info #left-panel p {
-          margin-left: 30%;
-          text-align: justify;
-          padding: 20px; }
+        margin-bottom: 60px;
+        margin-left: 10%; }
       body #primero #gamejam_info #right-panel {
-        width: 80%;
+        width: 50%;
         padding: 0 !important;
         background-color: #d8dbe2;
-        text-align: left;
         display: flex;
         flex-flow: column;
-        margin-left: 20%; }
-        body #primero #gamejam_info #right-panel .title {
-          padding-left: 12%; }
-        body #primero #gamejam_info #right-panel p {
-          margin-right: 30%;
-          text-align: justify;
-          padding: 20px; }
+        margin-left: auto;
+        margin-right: 10%; }
     body #primero #colaboradores {
       background-color: #d8dbe2;
       margin: 30px 0px;

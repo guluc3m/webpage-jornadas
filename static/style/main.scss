@@ -53,6 +53,11 @@ b {
 
 ul {
 	list-style: none;
+
+	&.withDots {
+		list-style: circle !important;
+		margin-left: 40px;
+	}
 }
 
 body {
@@ -134,41 +139,33 @@ body {
 			align-items: stretch;
 			justify-content: space-between;
 			margin-bottom: 30px;
+			background: url(../images/backgroundinfo.png) center fixed;
+
+			.title {
+				text-align: center;
+			}
+
+			.panel-text {
+				text-align: justify;
+				padding: 20px;
+			}
 
 			#left-panel {
-				width: 80%;
+				width: 50%;
 				padding: 0 !important;
 				background-color: #d8dbe2;
-				text-align: right;
 				margin-bottom: 60px;
-
-				.title {
-					padding-right: 20%;
-				}
-				p {
-					margin-left: 30%;
-					text-align: justify;
-					padding: 20px;
-				}
+				margin-left: 10%;				
 			}
 
 			#right-panel {
-				width: 80%;
+				width: 50%;
 				padding: 0 !important;
 				background-color: #d8dbe2;
-				text-align: left;
 				display: flex;
 				flex-flow: column;
-				margin-left: 20%;
-
-				.title {
-					padding-left: 12%;
-				}
-				p {
-					margin-right: 30%;
-					text-align: justify;
-					padding: 20px;
-				}
+				margin-left: auto;
+				margin-right: 10%;
 			}
 		}
 
