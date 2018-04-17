@@ -147,14 +147,14 @@ body {
 
 			.panel-text {
 				text-align: justify;
-				padding: 20px 30px;
+				padding: 20px 30px 40px;
 			}
 
 			#left-panel {
 				width: 50%;
 				padding: 0 !important;
 				background-color: white;
-				margin: 20px 10% 60px;			
+				margin: 20px 10% 60px;
 			}
 
 			#right-panel {
@@ -166,12 +166,31 @@ body {
 				margin: 0px 10% 60px auto;
 			}
 
-			#colaboradores {
+			#aprender {
 				padding: 0 !important;
 				background-color: white;
 				width: 60%;
 				margin: auto;
 				margin-bottom: 40px;
+
+				.two-columns{
+
+					display: flex;
+					flex-flow: row wrap;
+					justify-content: space-between;
+
+					.column {
+						width:47%;
+						text-align: center;
+						div {
+							text-align: justify;
+						}
+					}
+				}
+
+				#pygame_logo, #godot_logo {
+					width: 40%;
+				}
 			}
 		}
 
@@ -199,7 +218,7 @@ body {
 			margin: 25px auto;
 
 			li {
-				margin: 5px auto;
+				margin: 10px auto;
 			}
 
 			.press2p {
@@ -325,6 +344,5 @@ body {
 		.legal {
 			margin: 10px auto;
 		}
-	}	
+	}
 }
-

@@ -102,7 +102,7 @@ body {
         padding: 20px 0px; }
       body #primero #gamejam_info .panel-text {
         text-align: justify;
-        padding: 20px 30px; }
+        padding: 20px 30px 40px; }
       body #primero #gamejam_info #left-panel {
         width: 50%;
         padding: 0 !important;
@@ -115,12 +115,23 @@ body {
         display: flex;
         flex-flow: column;
         margin: 0px 10% 60px auto; }
-      body #primero #gamejam_info #colaboradores {
+      body #primero #gamejam_info #aprender {
         padding: 0 !important;
         background-color: white;
         width: 60%;
         margin: auto;
         margin-bottom: 40px; }
+        body #primero #gamejam_info #aprender .two-columns {
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-between; }
+          body #primero #gamejam_info #aprender .two-columns .column {
+            width: 47%;
+            text-align: center; }
+            body #primero #gamejam_info #aprender .two-columns .column div {
+              text-align: justify; }
+        body #primero #gamejam_info #aprender #pygame_logo, body #primero #gamejam_info #aprender #godot_logo {
+          width: 40%; }
   body #segundo {
     display: flex;
     flex-flow: column;
@@ -138,7 +149,7 @@ body {
       max-width: 70%;
       margin: 25px auto; }
       body #segundo #conditions li {
-        margin: 5px auto; }
+        margin: 10px auto; }
       body #segundo #conditions .press2p {
         font-family: "Press Start 2P", cursive; }
         body #segundo #conditions .press2p .remark {
