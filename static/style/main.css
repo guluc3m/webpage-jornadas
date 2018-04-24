@@ -45,8 +45,8 @@ body {
   text-align: center; }
   body header {
     background: #1c3144;
-    background: url(https://images.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.pHz_04fcr9abI0abYoBTxAHaFj%26pid%3D15.1&f=1) center bottom fixed;
-    background-size: cover;
+    background: url(../images/background_header.png) center bottom fixed;
+    background-size: contains;
     flex-flow: column;
     min-height: 70vh;
     display: flex;
@@ -55,9 +55,20 @@ body {
     position: relative; }
     body header #logo {
       margin-top: auto; }
-      body header #logo img {
-        width: 30%;
-        height: 100%; }
+      @media (max-width: 768px) {
+        body header #logo img {
+          width: 50%;
+          height: 100%;
+          padding: 0px 40px;
+          background-color: #0003;
+          box-shadow: 0px 0px 10px 0px #0000004d; } }
+      @media (min-width: 768px) {
+        body header #logo img {
+          width: 30%;
+          height: 100%;
+          padding: 0px 40px;
+          background-color: #0003;
+          box-shadow: 0px 0px 10px 0px #0000004d; } }
     body header nav {
       background-color: #d8dbe2;
       color: black;
@@ -68,12 +79,15 @@ body {
       display: flex;
       justify-content: space-evenly;
       font-size: 1.2em;
-      flex-flow: row;
+      flex-flow: row wrap;
       padding: 0 14%; }
       body header nav ul {
         display: flex;
         justify-content: space-around;
         margin: 1% 25%; }
+  @media (max-width: 768px) {
+    body .info {
+      padding: 0 !important; } }
   body .info {
     color: white;
     margin: 30px 10%;
@@ -87,10 +101,18 @@ body {
     background-color: #591728; }
     body #primero div {
       padding: 10px 0px; }
-    body #primero #presentation {
-      margin-left: auto;
-      width: 60%;
-      margin-right: auto; }
+    @media (min-width: 768px) {
+      body #primero #presentation {
+        margin-left: auto;
+        width: 60%;
+        margin-right: auto; } }
+    @media (max-width: 768px) {
+      body #primero #presentation {
+        width: 80%;
+        text-align: justify; } }
+    @media (max-width: 768px) {
+      body #primero #gamejam_info {
+        padding: 0 !important; } }
     body #primero #gamejam_info {
       display: flex;
       flex-flow: column;
@@ -103,35 +125,70 @@ body {
       body #primero #gamejam_info .panel-text {
         text-align: justify;
         padding: 20px 30px 40px; }
-      body #primero #gamejam_info #left-panel {
-        width: 50%;
-        padding: 0 !important;
-        background-color: white;
-        margin: 20px 10% 60px; }
-      body #primero #gamejam_info #right-panel {
-        width: 50%;
-        padding: 0 !important;
-        background-color: white;
-        display: flex;
-        flex-flow: column;
-        margin: 0px 10% 60px auto; }
-      body #primero #gamejam_info #aprender {
-        padding: 0 !important;
-        background-color: white;
-        width: 60%;
-        margin: auto;
-        margin-bottom: 40px; }
-        body #primero #gamejam_info #aprender .two-columns {
+      @media (max-width: 768px) {
+        body #primero #gamejam_info #left-panel {
+          padding: 0 !important;
+          background-color: white;
+          margin-top: 300px; }
+        body #primero #gamejam_info #right-panel {
+          padding: 0 !important;
+          background-color: white;
           display: flex;
-          flex-flow: row wrap;
-          justify-content: space-between; }
-          body #primero #gamejam_info #aprender .two-columns .column {
-            width: 47%;
-            text-align: center; }
-            body #primero #gamejam_info #aprender .two-columns .column div {
-              text-align: justify; }
-        body #primero #gamejam_info #aprender #pygame_logo, body #primero #gamejam_info #aprender #godot_logo {
-          width: 40%; }
+          flex-flow: column;
+          margin-top: 300px; }
+        body #primero #gamejam_info #aprender {
+          padding: 0 !important;
+          background-color: white;
+          margin-top: 300px; }
+          body #primero #gamejam_info #aprender .two-columns {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between; }
+            body #primero #gamejam_info #aprender .two-columns .column {
+              text-align: center; }
+              body #primero #gamejam_info #aprender .two-columns .column div {
+                text-align: justify; }
+            body #primero #gamejam_info #aprender .two-columns #godot {
+              align-items: center;
+              display: flex;
+              justify-content: center;
+              width: 100%; }
+          body #primero #gamejam_info #aprender #pygame_logo, body #primero #gamejam_info #aprender #godot_logo {
+            width: 40%; } }
+      @media (min-width: 768px) {
+        body #primero #gamejam_info #left-panel {
+          width: 50%;
+          padding: 0 !important;
+          background-color: white;
+          margin: 20px 10% 60px; }
+        body #primero #gamejam_info #right-panel {
+          width: 50%;
+          padding: 0 !important;
+          background-color: white;
+          display: flex;
+          flex-flow: column;
+          margin: 0px 10% 60px auto; }
+        body #primero #gamejam_info #aprender {
+          padding: 0 !important;
+          background-color: white;
+          width: 60%;
+          margin: auto;
+          margin-bottom: 40px; }
+          body #primero #gamejam_info #aprender .two-columns {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between; }
+            body #primero #gamejam_info #aprender .two-columns .column {
+              width: 47%;
+              text-align: center; }
+              body #primero #gamejam_info #aprender .two-columns .column div {
+                text-align: justify; }
+            body #primero #gamejam_info #aprender .two-columns #godot {
+              align-items: center;
+              display: flex;
+              justify-content: center; }
+          body #primero #gamejam_info #aprender #pygame_logo, body #primero #gamejam_info #aprender #godot_logo {
+            width: 40%; } }
   body #segundo {
     display: flex;
     flex-flow: column;
@@ -143,6 +200,9 @@ body {
       body #segundo #pjs i {
         margin: 0px 2%;
         font-size: 5em; }
+    @media (max-width: 768px) {
+      body #segundo #conditions {
+        max-width: 100% !important; } }
     body #segundo #conditions {
       text-align: justify;
       font-size: 80%;

@@ -67,8 +67,8 @@ body {
 
 	header {
 		background: $dark-blue-color;
-		background: url(https://images.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.pHz_04fcr9abI0abYoBTxAHaFj%26pid%3D15.1&f=1) center bottom fixed;
-		background-size: cover;
+		background: url(../images/background_header.png) center bottom fixed;
+		background-size: contains;
 		flex-flow: column;
 		min-height: 70vh;
 		display: flex;
@@ -78,11 +78,26 @@ body {
 
 		#logo {
 			margin-top: auto;
-
-			img {
-				width: 30%;
-				height: 100%;
+			@media (max-width: 768px) {
+				img {
+					width: 50%;
+					height: 100%;
+					padding: 0px 40px;
+					background-color: #0003;
+					box-shadow: 0px 0px 10px 0px #0000004d;
+				}
 			}
+
+			@media (min-width: 768px) {		
+				img {
+					width: 30%;
+					height: 100%;
+					padding: 0px 40px;
+					background-color: #0003;
+					box-shadow: 0px 0px 10px 0px #0000004d;
+				}
+			}
+
 		}
 
 
@@ -96,7 +111,7 @@ body {
 			display: flex;
 			justify-content: space-evenly;
 			font-size: 1.2em;
-			flex-flow: row;
+			flex-flow: row wrap;
 			padding: 0 14%;
 
 			ul {
@@ -106,7 +121,11 @@ body {
 			}
 		}
 	}
-
+	@media (max-width: 768px) {
+		.info {
+			padding: 0 !important;
+		}
+	}
 	.info {
 		color: white;
 		margin: 30px 10%;
@@ -127,12 +146,24 @@ body {
 			padding: 10px 0px;
 		}
 
-		#presentation {
-			margin-left: auto;
-			width: 60%;
-			margin-right: auto;
+		@media(min-width: 768px){
+			#presentation {
+				margin-left: auto;
+				width: 60%;
+				margin-right: auto;
+			}
 		}
-
+		@media(max-width: 768px){
+			#presentation {
+				width: 80%;
+				text-align: justify;
+			}
+		}
+		@media (max-width: 768px) {
+			#gamejam_info {
+				padding: 0 !important;
+			}
+		}
 		#gamejam_info {
 			display: flex;
 			flex-flow: column;
@@ -149,47 +180,99 @@ body {
 				text-align: justify;
 				padding: 20px 30px 40px;
 			}
-
-			#left-panel {
-				width: 50%;
-				padding: 0 !important;
-				background-color: white;
-				margin: 20px 10% 60px;
-			}
-
-			#right-panel {
-				width: 50%;
-				padding: 0 !important;
-				background-color: white;
-				display: flex;
-				flex-flow: column;
-				margin: 0px 10% 60px auto;
-			}
-
-			#aprender {
-				padding: 0 !important;
-				background-color: white;
-				width: 60%;
-				margin: auto;
-				margin-bottom: 40px;
-
-				.two-columns{
-
-					display: flex;
-					flex-flow: row wrap;
-					justify-content: space-between;
-
-					.column {
-						width:47%;
-						text-align: center;
-						div {
-							text-align: justify;
-						}
-					}
+			@media (max-width: 768px) {
+				#left-panel {
+					padding: 0 !important;
+					background-color: white;
+					margin-top: 300px;
 				}
 
-				#pygame_logo, #godot_logo {
-					width: 40%;
+				#right-panel {
+					padding: 0 !important;
+					background-color: white;
+					display: flex;
+					flex-flow: column;
+					margin-top: 300px;
+				}
+				#aprender {
+					padding: 0 !important;
+					background-color: white;
+					margin-top: 300px;
+
+					.two-columns{
+	
+						display: flex;
+						flex-flow: row wrap;
+						justify-content: space-between;
+	
+						.column {
+							text-align: center;
+							div {
+								text-align: justify;
+							}
+						}
+						
+						#godot {
+							align-items: center;
+							display: flex;
+							justify-content: center;
+							width: 100%;
+
+						}	
+					}	
+	
+					#pygame_logo, #godot_logo {
+						width: 40%;
+					}
+				}	
+			}	
+			@media (min-width: 768px) {
+				#left-panel {
+					width: 50%;
+					padding: 0 !important;
+					background-color: white;
+					margin: 20px 10% 60px;
+				}
+
+				#right-panel {
+					width: 50%;
+					padding: 0 !important;
+					background-color: white;
+					display: flex;
+					flex-flow: column;
+					margin: 0px 10% 60px auto;
+				}
+			
+				#aprender {
+					padding: 0 !important;
+					background-color: white;
+					width: 60%;
+					margin: auto;
+					margin-bottom: 40px;
+	
+					.two-columns{
+	
+						display: flex;
+						flex-flow: row wrap;
+						justify-content: space-between;
+	
+						.column {
+							width:47%;
+							text-align: center;
+							div {
+								text-align: justify;
+							}
+						}
+						#godot {
+							align-items: center;
+							display: flex;
+							justify-content: center;
+						}
+					}
+
+					#pygame_logo, #godot_logo {
+						width: 40%;
+					}
 				}
 			}
 		}
@@ -210,7 +293,11 @@ body {
 				font-size: 5em;
 			}
 		}
-
+		@media (max-width: 768px) {
+			#conditions {
+				max-width: 100% !important;
+			}
+		}
 		#conditions {
 			text-align: justify;
 			font-size: 80%;
