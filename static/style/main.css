@@ -153,8 +153,11 @@ body {
               display: flex;
               justify-content: center;
               width: 100%; }
-          body #primero #gamejam_info #aprender #pygame_logo, body #primero #gamejam_info #aprender #godot_logo {
-            width: 40%; } }
+          body #primero #gamejam_info #aprender #pygame_logo {
+            width: 40%; }
+          body #primero #gamejam_info #aprender #godot_logo {
+            width: 90%;
+            opacity: 0.5; } }
       @media (min-width: 768px) {
         body #primero #gamejam_info #left-panel {
           width: 50%;
@@ -187,8 +190,11 @@ body {
               align-items: center;
               display: flex;
               justify-content: center; }
-          body #primero #gamejam_info #aprender #pygame_logo, body #primero #gamejam_info #aprender #godot_logo {
-            width: 40%; } }
+          body #primero #gamejam_info #aprender #pygame_logo {
+            width: 40%; }
+          body #primero #gamejam_info #aprender #godot_logo {
+            width: 90%;
+            opacity: 0.5; } }
   body #segundo {
     display: flex;
     flex-flow: column;

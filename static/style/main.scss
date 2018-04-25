@@ -88,7 +88,7 @@ body {
 				}
 			}
 
-			@media (min-width: 768px) {		
+			@media (min-width: 768px) {
 				img {
 					width: 30%;
 					height: 100%;
@@ -200,32 +200,36 @@ body {
 					margin-top: 300px;
 
 					.two-columns{
-	
+
 						display: flex;
 						flex-flow: row wrap;
 						justify-content: space-between;
-	
+
 						.column {
 							text-align: center;
 							div {
 								text-align: justify;
 							}
 						}
-						
+
 						#godot {
 							align-items: center;
 							display: flex;
 							justify-content: center;
 							width: 100%;
-
-						}	
-					}	
-	
-					#pygame_logo, #godot_logo {
+						}
+					}
+					//Aqui va godot_logo cuando se confirme la formacion
+					#pygame_logo {
 						width: 40%;
 					}
-				}	
-			}	
+
+					#godot_logo {
+						width: 90%;
+						opacity: 0.5;
+					}
+				}
+			}
 			@media (min-width: 768px) {
 				#left-panel {
 					width: 50%;
@@ -242,20 +246,20 @@ body {
 					flex-flow: column;
 					margin: 0px 10% 60px auto;
 				}
-			
+
 				#aprender {
 					padding: 0 !important;
 					background-color: white;
 					width: 60%;
 					margin: auto;
 					margin-bottom: 40px;
-	
+
 					.two-columns{
-	
+
 						display: flex;
 						flex-flow: row wrap;
 						justify-content: space-between;
-	
+
 						.column {
 							width:47%;
 							text-align: center;
@@ -270,8 +274,14 @@ body {
 						}
 					}
 
-					#pygame_logo, #godot_logo {
+					//Aqui va godot_logo cuando se confirme la formacion
+					#pygame_logo {
 						width: 40%;
+					}
+
+					#godot_logo {
+						width: 90%;
+						opacity: 0.5;
 					}
 				}
 			}
