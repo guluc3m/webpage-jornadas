@@ -83,7 +83,7 @@ body {
 					width: 50%;
 					height: 100%;
 					padding: 0px 40px;
-					background-color: #00000003;
+					background-color: #0003;
 					box-shadow: 0px 0px 10px 0px #0000004d;
 				}
 			}
@@ -93,7 +93,7 @@ body {
 					width: 30%;
 					height: 100%;
 					padding: 0px 40px;
-					background-color: #00000003;
+					background-color: #0003;
 					box-shadow: 0px 0px 10px 0px #0000004d;
 				}
 			}
@@ -212,22 +212,22 @@ body {
 							}
 						}
 
-						#godot {
-							align-items: center;
-							display: flex;
-							justify-content: center;
-							width: 100%;
-						}
+						//#godot {
+						//	align-items: center;
+						//	display: flex;
+						//	justify-content: center;
+						//	width: 100%;
+						//}
 					}
 					//Aqui va godot_logo cuando se confirme la formacion
-					#pygame_logo {
+					#pygame_logo, #godot_logo {
 						width: 40%;
 					}
 
-					#godot_logo {
-						width: 90%;
-						opacity: 0.5;
-					}
+					//#godot_logo {
+					//	width: 90%;
+					//	opacity: 0.5;
+					//}
 				}
 			}
 			@media (min-width: 768px) {
@@ -267,22 +267,22 @@ body {
 								text-align: justify;
 							}
 						}
-						#godot {
-							align-items: center;
-							display: flex;
-							justify-content: center;
-						}
+						//#godot {
+						//	align-items: center;
+						//	display: flex;
+						//	justify-content: center;
+						//}
 					}
 
 					//Aqui va godot_logo cuando se confirme la formacion
-					#pygame_logo {
+					#pygame_logo, #godot_logo {
 						width: 40%;
 					}
 
-					#godot_logo {
-						width: 90%;
-						opacity: 0.5;
-					}
+					//#godot_logo {
+					//	width: 90%;
+					//	opacity: 0.5;
+					//}
 				}
 			}
 		}
