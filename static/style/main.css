@@ -23,6 +23,10 @@
   background-color: #39a5db;
   color: white; }
 
+.float_right {
+  float: right;
+  margin-top: 10px; }
+
 a {
   text-decoration: none;
   color: inherit; }
@@ -253,6 +257,34 @@ body {
         transition: 0s;
         box-shadow: inset 0px -80px 0px 0px white;
         cursor: pointer; }
+  body #tercero {
+    display: flex;
+    flex-flow: column;
+    margin: 40px 0px; }
+    body #tercero #tercero_info {
+      width: 60%;
+      margin: auto;
+      margin-bottom: 50px; }
+    body #tercero #lista_juegos {
+      width: 70%;
+      display: flex;
+      flex-flow: column;
+      margin: auto; }
+      body #tercero #lista_juegos ul li {
+        margin: 20px 0px;
+        display: flex;
+        flex-flow: row;
+        text-align: justify;
+        justify-content: space-between;
+        align-items: center; }
+        body #tercero #lista_juegos ul li .img_juego {
+          width: 256px;
+          height: 144px;
+          margin-right: 30px; }
+        body #tercero #lista_juegos ul li img {
+          width: 100%; }
+        body #tercero #lista_juegos ul li .repo {
+          margin-left: 20px; }
   body footer .wrapper {
     margin: 20px auto; }
     body footer .wrapper .media {
