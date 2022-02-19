@@ -1,234 +1,158 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <title>GUL Jamón - Charleta Edition</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ====== SEO ====== -->
+    <meta name="description" content="GUL Jamón es el evento de videojuegos del GUL UC3M (gul.es) donde los videojuegos se hacen con software libre.">
+    <meta property="og:title" content="GUL Jamón" />
+    <meta property="og:url" content="https://jamon.gul.es/" />
+    <meta property="og:image" content="static/images/logo_jamon.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="GUL Jamón es el evento de videojuegos del GUL UC3M (gul.es) donde los videojuegos se hacen con software libre." />
+    <meta property="og:locale" content="es_ES" />
+    <!-- ====== FAVICON ====== -->
+    <link rel="icon" href="static/images/favicon.png" />    
+    <link rel="stylesheet" href="static/style/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="static/style/styles.css" />
+    <!-- ====== FONTS ====== -->
+    <link rel="stylesheet" href="static/style/fonts/gfonts.css"/>
+    <script type="text/javascript" src="static/js/jquery-3.6.0.min.js" defer></script>
+    <script type="text/javascript" src="static/style/bootstrap/js/bootstrap.min.js" defer></script>
+    <script type="text/javascript" src="static/js/script.js" defer></script>
+  </head>
+  <body>
+    <!-- ====== NAV SECTION ====== -->
+    <header id="nav-section">
+      <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="row col-12 p-0 m-0 justify-content-between">
+          <a class="navbar-brand" href="#animation-header" aria-current="page">
+            <img class="logo-nav" src="static/images/logo_jamon2.png" alt="Logo GUL Radio"/>
+          </a>
+          <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarNav"
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+            <ul class="navbar-nav nav-container-icon">
+              <li class="nav-item">
+                <a class="nav-link" target="_blank" href="https://cursos.gul.es" title="Enlace a cursos.gul.es">
+                  <img class="image-nav" src="static/images/icon/graduation-cap.svg" alt="Graduation icon"/>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" target="_blank" href="https://zoe.gul.es" title="Enlace a zoe.gul.es" aria-disabled="true">
+                  <img class="image-nav" src="static/images/icon/zoe_icon.svg" alt="zoe.gul.es icon"/>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" target="_blank" href="https://radio.gul.es" title="Enlace a radio.gul.es" aria-disabled="true">
+                  <img class="image-nav" src="static/images/icon/radio.svg" alt="Radio icon"/>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" target="_blank" href="https://gul.es" title="Enlace a gul.es" aria-disabled="true">
+                  <img class="image-nav" src="static/images/icon/gul-lince.png" alt="gul.es icon"/>
+                </a>
+              </li>
+            </ul>
 
-<head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Grupo de Usuarios de Linux de la Universidad Carlos III de Madrid">
-    <link rel="icon" href="static/images/favicon.png" type="image/png">
-    <title>GUL Jamón</title>
-
-    <link href="https://use.fontawesome.com/releases/v5.0.3/css/all.css" rel="stylesheet">
-    <link href="static/style/fonts/rpg-awesome-master/css/rpg-awesome.min.css" rel="stylesheet">
-    <link href="static/style/main.css" rel="stylesheet">
-</head>
-
-<body>
-    <header>
-        <div id="logo">
-            <img src="static/images/logo_jamon.png">
+            <ul class="navbar-nav nav-container-icon">
+              <li class="nav-item">
+                <a class="nav-link" href="#que-es">
+                  Información
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#charlas">
+                  Charlas
+                </a>
+              </li>
+            </ul> 
+          </div>
         </div>
-        <nav class="shadow">
-            <a href="#primero">Información</a>
-            <a href="#segundo">Inscripción</a>
-            <a href="#tercero">Juegos 2018</a>
-            <a href="https://gul.es" target="_blank">GUL UC3M</a>
-        </nav>
+      </nav>
     </header>
-    <main class="shadow">
-        <div id="primero">
-            <div class="info" id="presentation">
-                <div class="press2p">¿Esto qué es? ¿Se come?</div>
-                <p>Desde el GUL llevamos un par de años entrando en el terreno de desarrollar nuestros propios juegos, hasta el punto de que algo que surgió como una medio broma ha dado lugar a dos juegos y a un grupo de trabajo de más de 20 personas (incluyendo programadores y artistas). <br><br> El salto lógico como no podía ser de otro modo era organizar nuestra propia <b>game jam.</b></p>
+
+    <!-- ====== MAIN SECTION ====== -->
+    <main>
+      <!-- Bloque animación -->
+      <section id="animation-header">
+          <img class="" src="static/images/banner2.png" alt="animación contando con iconos en qué consiste la GUL Jamón"/>
+      </section>
+
+      <section id="que-es" class="pt-4 pb-4">
+        <img src="static/images/separador.png" id="separador-1" class="separator"/>
+        <div class="row justify-content-evenly m-0 col-12 p-0 align-items-center">
+          <div id="dev-random" class="offset-lg-1 col-lg-4 col-sm-12">
+            <div class="text-title text-center p-3">
+              <h3>¿Qué es?</h3>
             </div>
-            <div id="gamejam_info">
-                <div class="shadow" id="left-panel">
-                    <div class="title press2p">¿Qué es una game jam?</div>
-
-                    <div class="panel-text">
-                        Una game jam consiste, de forma simplificada, en un hackatón (hackathon in english) pero centrado en el desarrollo de videojuegos. La duración no tiene necesariamente que ser 24 horas ni un fin de semana exclusivamente, hay multitud de game jams con duraciones muy diferentes. Las más conocidas a nivel internacional son la <a href="https://ludumdare.com/compo/" class="press2p-inline">Ludum Dare</a>, <a href="https://globalgamejam.org" class="press2p-inline">Global Game Jam</a> o mismamente <a href="https://itch.io/jams" class="press2p-inline">Itch.io</a> donde se alojan muchas y diversas game jams.
-                        <br><br>
-                        Los equipos no suelen ser muy grandes, de forma que haya 1 o 2 personas encargadas de la programación 1 de los gráficos y otra de la música (si es posible, aun que internet es un gran lugar con música libre de derechos).
-                        <br><br>
-                        Al comienzo de cada game jam se da un tema (quizás aleatorio, quizás temático) sobre el que los concursantes deberán desarrollar sus juegos, siendo uno de los aspectos a evaluar, el que el juego se ajuste a la temática. Por ejemplo, una temática podría ser "Enemigos" y se podrían hacer juegos tales como: Ser el malo del videojuego, descubrir un espía entre tus aliados o simplemente matar el mayor número de enemigos posibles.
-                    </div>
-                </div>
-                <div class="shadow" id="right-panel">
-                    <div class="title press2p">¡Pero yo no sé nada de todo esto!</div>
-                    <div class="panel-text">
-                        ¡Tranquilizaos todos! Respirad pausadamente y que no cunda el púnico. Ya sabemos que la gran mayoría de gente no sabe nada relacionado con el desarrollo de videojuegos y que hay otro número de gente interesada pero que no sabe programar. <b>Lo tenemos todo pensado.</b> Por eso se darán una serie de talleres donde <b>os enseñaremos desde lo más básico</b> para que todos podáis disfrutar de la Gul Jamón como es debido. <br><br>
-
-                        <ul class="withDots">
-                            <li>Se realizará una semana de formación durante la segunda semana de junio en la tarde. Comenzando así el lunes 4 y acabando como muy tarde el viernes 8. Siendo sobre las 17:00-20:00 de cada día. Las aulas serán la 7.1.J02 para Pygame y la 7.1.J05 para Godot.</li>
-                            <li>Finalizaremos el viernes 15 en las aulas 7.1.J03 y 7.1.05 en una sesión de 9:00 a 19:00 en la cuál comenzará la ansiada Gul Jamón, dando la (o las) temáticas sobre las que deberéis desarrollar el juego.</li>
-                            <li>A partir de las 19:00 serán las presentaciones y posteriormente la entrega de premios.</li>
-                        </ul>
-
-                        <br>
-                        Además, si quieres obtener un crédito optativo o de humanidades es tu oportunidad, ya que, si asistís a estas sesiones de formación junto con la sesión presencial de la Gul Jamón, podréis solicitar uno de los dos créditos.
-                    </div>
-                </div>
-                <div class="shadow" id="aprender">
-                    <div class="title press2p">¿Qué puedo aprender?</div>
-                    <div class="panel-text two-columns">
-                        <div class="column">
-                            <a href="https://www.pygame.org/news" target="_blank" title="Web Pygame"><img id="pygame_logo" src="static/images/pygame_logo.gif" alt="Logo Pygame"/></a>
-                            <div>
-                            Desde el GUL vamos a ofrecer formación para el lenguaje de programación Python y el framework <a href="https://www.pygame.org/news" target="_blank" title="Web Pygame"><span class="press2p-inline">Pygame</span></a>. Se trata de un framework relativamente sencillo y amigable para realizar juegos en 2D sin muchas pretensiones.
-                            </div>
-                        </div>
-                        <div class="column" id="godot">
-<!-- 				<span style="position: absolute;font-size: 1.5em;background-color: #ffffff80;z-index: 1;">Pendiente de confirmación</span> -->
-<!--				<i class="ra ra-robot-arm" style="font-size: 8em;color: #00000080;"></i>-->
-                            <a href="https://godotengine.org/" target="_blank" title="Enlace página de Godot"><img id="godot_logo" src="static/images/godot_logo.png" alt="Logo Godot"/></a>
-                            <div>
-                                Contaremos con la colaboración de <b>CodeAttack</b> para enseñaros a usar <a href="https://godotengine.org/" target="_blank" title="Enlace página de Godot"><span class="press2p-inline">Godot</span></a>. Un IDE para desarrollo de juegos muy parecido a Unity, pero mejor, por que es software libre, que permite desarrollo tanto 2D como 3D.
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="text-desc border border-dark">
+              <p> La GUL Jamón es el evento del GUL UC3M dedicado a los videojuegos.</p>
+              <p>Dado que somos firmes defensores del software libre este evento no podría ser menos, siendo los protagonistas aquellos motores open-source como <a href="https://godot.com" target="_blank" title="web oficial de Godot">Godot</a>, frameworks como <a href="">Pygame</a> o <a href="https://love2d.org/" target="_blank" title="web oficial de Löve">Löve</a>. o cualquier charla relacionada con los videojuegos: algoritmos, post-mortems, recomendaciones...
+              </p>
             </div>
+          </div>
+          <div id="dev-random" class="d-flex align-items-center col-lg-2 col-sm-12">
+            <img class="col" alt="Un pingüino bailando" src="static/images/tuxAnimated.gif"/>
+          </div>
+          <div id="dev-random" class="col-lg-4 col-sm-12">
+            <div class="text-title text-center p-3">
+              <h3>Charleta Edition</h3>
+            </div>
+            <div class="text-desc border border-dark">
+                <p>La GUL Jamón tuvo su origen en 2017 como una <a href="https://jamon.gul.es/2017" target="_blank" title="web de la gamejam">gamejam</a>.</p>
+                <p>Esta edición, subtitulada <b>Charleta Edition</b>, pondrá el foco en charlas y talleres dada por gente de primer nivel, tanto por el lado académico como por el lado más divulgativo.</p>
+                <p>De igual manera, en el GUL nos orgullecemos de dar la oportunidad a (casi) cualquiera de transmitir sus conocimientos de la forma que prefieran, por lo que también habrá charlas más que recomendables por parte de voluntarios de la asociación.
+                </p>
+            </div>
+          </div>
         </div>
-        <div id="segundo">
-            <div class="info">
-                <p class="intro press2p">Si has leído hasta aquí es por que debes de tener alguno de los siguientes síntomas:<br></p>
+      </section>
 
-                <ul id="conditions">
-                    <li class="press2p">Unas ganas completamente incontrolables por conseguir ese <span class="press2p remark">crédito de humanidades</span> que te falta</li>
-                    <li class="press2p"><span class="press2p remark">Aprender Python/PyGame</span> o algún que otro framework open source para hacer juegos</li>
-                    <li class="press2p"><span class="press2p remark">Programar un juego</span> en un único día y poder fardar de él</li>
-                    <li><br></li>
-                    <li class="press2p"> O todos los síntomas y la única forma de curarte es aceptando esta misión... <span class="press2p remark">¡Que tiene recompensa para los tres mejores juegos!</span></li>
-		    <li><br></li>
-                </ul>
-                <!-- https://shop.pimoroni.com/products/raspberry-pi-zero-w -->
-                <div id="premios">
-                    <ul class="prize">
-                        <li class="press2p badFix"><i class="ra ra-trophy first_prize"></i></li>
-                        <ul>
-                            <li><img src="static/images/prize1.jpg" alt="Primer premio: kit Raspberry-pi-zero-w"></li>
-                            <li class="press2p">Kit Raspberry Pi Zero W</li>
-                        </ul>
-                    </ul>
-                    <ul class="prize">
-                        <li class="press2p badFix"><i class="ra ra-trophy second_prize"></i></li>
-                        <ul>
-                            <li><img src="static/images/prize2.jpg" alt="Segundo premio: Raspberry-pi-zero-w con adaptadores"></li>
-                            <li class="press2p">Raspberry Pi Zero W + Adaptadores</li>
-                        </ul>
-                    </ul>
-                    <ul class="prize">
-                        <li class="press2p badFix"><i class="ra ra-trophy third_prize"></i></li>
-                        <ul>
-                            <li><img src="static/images/prize3.jpg" alt="Tercero premio: Raspberry-pi-zero-w"></li>
-                            <li class="press2p">Raspberry Pi Zero W</li>
-                        </ul>
-                    </ul>
-                </div>
+      <section id="charlas" class="pt-4 pb-4">
+        <img src="static/images/separador2.png" id="separador-2" class="separator"/>
+        <div class="row justify-content-center m-0 col-12 p-0 align-items-center">
+          <div id="dev-random" class="col-lg-5 col-sm-12">
+            <div class="text-title text-center p-3">
+              <h3>Charlas</h3>
             </div>
-            <!--<div id="pjs">
-                <i id="iconpj1" class="ra ra-hood"></i>
-                <i id="iconpj2" class="ra ra-arcane-mask"></i>
-                <i id="iconpj3" class="ra ra-knight-helmet"></i>
-            </div>-->
-            <ul>
-                <li class="press2p">La GUL Jamón 2018 ha finalizado! Con suerte nos vemos en 2019! :)</li>
-		        <li><br></li>
-	        </ul>
-            <p><a alt="Misión no disponible"><button class="submitBox"><i class="ra ra-scroll-unfurled"></i> Sin misiones </button></a></p>
-        </div>
-        <div id="tercero">
-            <div id="tercero_info">La edición 2018 ha sido todo un éxito, y como prueba de ellos tenemos a continuación algunos de los juegos realizados para que les podáis echar un ojo. La temática de esta edición fue: <br><br><b> Rivalidades Estúpidas</b></div>
-            <div id="lista_juegos">
-                <ul>
-                    <li>
-                        <div class="img_juego">
-                            <img src="static/images/juegos/conquer.jpg" alt="captura Conquer the moon">
-                        </div>
-                        <div class="desc_juego">
-                            <p><b>Conquer the moon</b> es un juego estilo Shoot 'em up donde elegiremos ser Americanos o Soviéticos. El objetivo es conseguir 2000 puntos y derrotar al jefe final. (El jefe final de la URSS está bugeado xD). <b>Este juego fue realizado con Godot</b>.</p>
-                            <p class="float_right">
-                                <a class="press2p-inline" href="https://cloud.gul.es/s/ck2Gn3yzEQfM7yn/download?path=%2Factividades%2F2018%2Fgul_jamon&files=Conquer_the_moon.zip" target="_blank">Enlace</a>
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="img_juego">
-                            <img src="static/images/juegos/humanito.jpg" alt="captura Humanito">
-                        </div>
-                        <div class="desc_juego">
-                            <p><b>Humanito</b> es un juego totalmente hecho 100% a mano donde Zeus y Hades deben soplar a un humano para recoger el mayor número de puntos. También se puede hacer perder puntos al contrario, ¡o incluso perder ambos los puntos! <b>Este juego fue realizado con Godot</b>.</p>
-                            <p class="float_right">
-                                <a class="press2p-inline" href="https://cloud.gul.es/s/ck2Gn3yzEQfM7yn/download?path=%2Factividades%2F2018%2Fgul_jamon&files=Humanito.zip" target="_blank">Enlace</a>
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="img_juego">
-                            <img src="static/images/juegos/ivst.jpg" alt="captura Informático VS Teleco">
-                        </div>
-                        <div class="desc_juego">
-                            <p><b>Informático vs Teleco</b> nos desplaza a una rivalidad perpetua y que nunca va a desaparecer: ¿Qué es mejor, un informático o un teleco? ¡Es el momento de averiguarlo! <b>Este juego fue realizado con Godot</b>.</p>
-                            <p class="float_right">
-                                <a class="press2p-inline" href="https://cloud.gul.es/s/ck2Gn3yzEQfM7yn/download?path=%2Factividades%2F2018%2Fgul_jamon&files=IvsT.zip" target="_blank">Enlace</a>
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="img_juego">
-                            <img src="static/images/juegos/pizza.jpg" alt="captura Pizza Battle Royale">
-                        </div>
-                        <div class="desc_juego">
-                            <p><b>Pizza Battle Royale</b> es un juego plataformero en 2D al más puro estilo Megaman donde tendremos que abrirnos paso con nuestra querida Pizza con piña a través de enemigos que nos lanzan pizzas de peperoni. <b>Este juego fue realizado con Godot</b>.</p>
-                            <p class="float_right">
-                                <a class="press2p-inline" href="https://cloud.gul.es/s/ck2Gn3yzEQfM7yn/download?path=%2Factividades%2F2018%2Fgul_jamon&files=PizzaBattleRoyale.zip" target="_blank">Enlace</a>
-                                <a class="press2p-inline repo" href="https://github.com/marcs77/GJ2018_PizzaBattleRoyale" target="_blank">Repositorio</a>
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="img_juego">
-                            <img src="static/images/juegos/run.jpg" alt="captura Run Stallman, Run">
-                        </div>
-                        <div class="desc_juego">
-                            <p><b>Run Stallman, Run</b> es un juego plataformero donde controlaremos a nuestro mesías Richard Stallman en su huida contra toda la gente con la que se ha peleado en las últimas 12h. Tiene dos dificultades, fácil y difícil. Fácil es un recorrido cerrado mientras que difícil se genera de forma aleatoria hasta que se pierda. <b>Este juego fue realizado con Pygame</b>.</p>
-                            <p class="float_right">
-                                <a class="press2p-inline" href="https://cloud.gul.es/s/ck2Gn3yzEQfM7yn/download?path=%2Factividades%2F2018%2Fgul_jamon&files=Run_Stallman_Run.zip" target="_blank">Enlace</a>
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="img_juego">
-                            <img src="static/images/juegos/dulce.jpg" alt="captura Dulce vs Salado">
-                        </div>
-                        <div class="desc_juego">
-                            <p><b>Dulce vs Salado</b>, la eterna rivalidad entre algunas parejas: ¿Dulce o Salado? ¿Izquierda o Derecha? ¿Pizza de Piña o Peperonni? ¿Ketchup o Katsup? No podremos responder a todas las preguntas, pero si al menos a la primera. ¡Sé el que consiga poner más palomitas dentro del bol y responde a la pregunta! (por un día). <b>Este juego fue realizado con Godot</b>.</p>
-                            <p class="float_right">
-                                <a class="press2p-inline" href="https://cloud.gul.es/s/ck2Gn3yzEQfM7yn/download?path=%2Factividades%2F2018%2Fgul_jamon&files=dulce_vs_salado.zip" target="_blank">Enlace</a>
-                                <a class="press2p-inline repo" href="https://bitbucket.org/fr91/jamon-gul-18-dulce-vs-salado" target="_blank">Repositorio</a>
-                            </p>
-                        </div>
-                    </li>
-                </ul>
+            <div class="text-desc border border-dark">
+                <p>¿Qué pasaría si se juntasen 4 personas en el despacho para hacer un  de radio sin tener nada preparado previamente? Pues /dev/random (pronunciado, "dev random").</p>
             </div>
+          </div>
         </div>
+        <small id="kenney">
+          Imágenes por <a href="https://kenney.nl/" target="_blank">Kenny</a>
+        </small>
+      </section>
+
+      <!-- ==== Parte legal ==== -->
+      <section id="legal-section" class="border-top border-dark">
+        <div class="text-desc text-center">
+          <p>
+            <a target="_blank" aria-current="false" href="https://twitter.com/guluc3m" title="Enlace a Twitter">
+                <img class="image-nav" src="static/images/icon/twitter.svg" alt="Twitter icon"/></a> <!-- Está en la misma línea porque si no el HTML mete un espacio en blanco -->
+            <a target="_blank" href="https://github.com/guluc3m" title="Enlace a Github" aria-current="false">
+              <img class="image-nav" src="static/images/icon/github.svg" alt="Github icon"/>
+            </a>
+          </p>
+          <p>
+          El Grupo de Usuarios de Linux de la Universidad Carlos III de Madrid es una asociación declarada de beneficio social por el Ministerio de Hacienda.
+          </p>
+          <p>
+          Domicilio social: despacho 2.3C05 del edificio Sabatini, Avenida de la Universidad, 30 28911 Leganés Madrid, España.
+          </p>
+          <p>
+          C.I.F.: G83296988<br>
+          Número de registro de la comunidad de Madrid: 23500<br>
+          Número de registro del ayuntamiento de Leganés: 795
+          </p>
+        </div>
+      </section>
+      <!-- ====================== -->
     </main>
-    <footer id="about">
-        <div class="wrapper">
-            <div class="media">
-                <ul class="withDots">
-                    <li><a target="_blank" href="https://twitter.com/hackersuc3m">Hackers UC3M</a></li>
-                    <li><a target="_blank" href="http://radio.gul.es/">Radio GUL</a></li>
-                    <li><a target="_blank" href="https://cursos.gul.es/">Jornadas Técnicas</a></li>
-                </ul>
-                <div class="social">
-                    <a target="_blank" href="https://github.com/guluc3m" class="fab fa-github"></a>
-                    <a target="_blank" href="https://www.youtube.com/user/guluc3m" class="fab fa-youtube"></a>
-                    <a target="_blank" href="https://twitter.com/guluc3m" class="fab fa-twitter"></a>
-                </div>
-            </div>
-            <div class="legal">
-                <p>El Grupo de Usuarios de Linux de la Universidad Carlos III de Madrid es una asociación declarada de beneficio social por el Ministerio de Hacienda.</br>
-                Domicilio social: despacho 2.3C05 del edificio Sabatini, Avenida de la Universidad, 30 28911 Leganés Madrid, España.</p>
-
-                <p>C.I.F.:G83296988</p>
-
-                <p>Número de registro de la comunidad de Madrid: 23500</br>
-                Número de registro del ayuntamiento de Leganés: 795</p>
-            </div>
-        </div>
-    </footer>
-</body>
-
+  </body>
 </html>
