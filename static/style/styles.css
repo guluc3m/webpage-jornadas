@@ -10,12 +10,17 @@ a:hover {
   cursor: url("../images/kenny-assets/ui/Vector/pointer.svg"), auto;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 section {
   position: relative;
 }
 
 .no-style {
   text-decoration: inherit;
+  color: inherit;
 }
 
 /* ======  NAV SECTION START ====== */
@@ -74,14 +79,19 @@ section {
 }
 
 #que-es {
-  height: 60vh; /* La mitad de la pantalla */
-  background-image: url("../images/background-1-alt.png");
-  background-size: cover;
-  background-position: top;
+  /*height: 60vh; /* La mitad de la pantalla */
+  background-image: url("../images/pattern.jpg");
+  background-position: center;
+  background-repeat: repeat;
+  padding: 5% 0;
 }
 
 #que-es>.row, #charlas>.row  {
   height: 100%;
+}
+
+#pingu img {
+  width: 100%;
 }
 
 #charlas {

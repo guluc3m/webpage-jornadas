@@ -25,13 +25,13 @@
   <body>
     <!-- ====== NAV SECTION ====== -->
     <header id="nav-section">
-      <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="row col-12 p-0 m-0 justify-content-between">
+      <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid m-3 mt-0 mb-0">
           <a class="navbar-brand" href="#animation-header" aria-current="page">
-            <img class="logo-nav" src="static/images/logo_jamon2.png" alt="Logo GUL Radio"/>
+            <img class="logo-nav" src="static/images/logo_jamon.png" alt="Logo GUL Radio"/>
           </a>
-          <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarNav"
-                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                  data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
@@ -58,7 +58,7 @@
               </li>
             </ul>
 
-            <ul class="navbar-nav nav-container-icon">
+            <ul class="navbar-nav nav-container-text">
               <li class="nav-item">
                 <a class="nav-link" href="#que-es">
                   Información
@@ -82,30 +82,28 @@
           <img class="" src="static/images/banner2.png" alt="animación contando con iconos en qué consiste la GUL Jamón"/>
       </section>
 
-      <section id="que-es" class="pt-4 pb-4">
+      <section id="que-es" class="">
         <img src="static/images/separador.png" id="separador-1" class="separator"/>
-        <div class="row justify-content-evenly m-0 col-12 p-0 align-items-center">
-          <div id="dev-random" class="offset-lg-1 col-lg-4 col-sm-12">
+        <div class="row justify-content-center m-0 col-12 p-0 align-items-center">
+          <div id="" class="col-lg-4 col-sm-12">
             <div class="text-title text-center p-3">
               <h3>¿Qué es?</h3>
             </div>
             <div class="text-desc border border-dark">
-              <p> La GUL Jamón es el evento del GUL UC3M dedicado a los videojuegos.</p>
+              <p> La GUL Jamón es el evento del GUL UC3M dedicado a los videojuegos. Tuvo su origen en 2018 como una <a href="https://jamon.gul.es/2018" target="_blank" title="web de la gamejam">gamejam</a>.</p>
               <p>Dado que somos firmes defensores del software libre este evento no podría ser menos, siendo los protagonistas aquellos motores open-source como <a href="https://godot.com" target="_blank" title="web oficial de Godot">Godot</a>, frameworks como <a href="">Pygame</a> o <a href="https://love2d.org/" target="_blank" title="web oficial de Löve">Löve</a>. o cualquier charla relacionada con los videojuegos: algoritmos, post-mortems, recomendaciones...
               </p>
             </div>
           </div>
-          <div id="dev-random" class="d-flex align-items-center col-lg-2 col-sm-12">
-            <img class="col" alt="Un pingüino bailando" src="static/images/tuxAnimated.gif"/>
+          <div id="pingu" class="d-flex align-items-center justify-content-center col-5 col-lg-2 col-sm-3">
+            <img class="" alt="Un pingüino bailando" src="static/images/tuxAnimated.gif"/>
           </div>
-          <div id="dev-random" class="col-lg-4 col-sm-12">
-            <div class="text-title text-center p-3">
-              <h3>Charleta Edition</h3>
-            </div>
+          <div id="" class="col-lg-4 col-sm-12">
+            <div class="text-title text-center p-3"></div>
             <div class="text-desc border border-dark">
-                <p>La GUL Jamón tuvo su origen en 2017 como una <a href="https://jamon.gul.es/2017" target="_blank" title="web de la gamejam">gamejam</a>.</p>
+                <img class="col-12" alt="" src="static/images/logo_jamon2.png"/>
                 <p>Esta edición, subtitulada <b>Charleta Edition</b>, pondrá el foco en charlas y talleres dada por gente de primer nivel, tanto por el lado académico como por el lado más divulgativo.</p>
-                <p>De igual manera, en el GUL nos orgullecemos de dar la oportunidad a (casi) cualquiera de transmitir sus conocimientos de la forma que prefieran, por lo que también habrá charlas más que recomendables por parte de voluntarios de la asociación.
+                <p> Todos ellos <b>totalmente gratuitos y online</b>.
                 </p>
             </div>
           </div>
@@ -115,17 +113,42 @@
       <section id="charlas" class="pt-4 pb-4">
         <img src="static/images/separador2.png" id="separador-2" class="separator"/>
         <div class="row justify-content-center m-0 col-12 p-0 align-items-center">
-          <div id="dev-random" class="col-lg-5 col-sm-12">
-            <div class="text-title text-center p-3">
-              <h3>Charlas</h3>
+          <div id="" class="col-lg-8 col-sm-12">
+            <div class="text-desc border border-dark text-center">
+              A continuación podrás ver los días, horas y charlas que tendremos en esta edición.
+            </div>
+            <div class="text-title text-center p-3 mt-4">
             </div>
             <div class="text-desc border border-dark">
-                <p>¿Qué pasaría si se juntasen 4 personas en el despacho para hacer un  de radio sin tener nada preparado previamente? Pues /dev/random (pronunciado, "dev random").</p>
+                <nav>
+                  <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                      <button class="nav-item nav-link active" data-toggle="tab" href="#martes" role="tab" aria-controls="nav-home" aria-selected="true">
+                      Martes
+                      </button>
+                      <button class="nav-item nav-link" data-toggle="tab" href="#miercoles" role="tab" aria-controls="nav-profile" aria-selected="false">
+                      Miércoles
+                      </button>
+                      <button class="nav-item nav-link" data-toggle="tab" href="#miercoles" role="tab" aria-controls="nav-profile" aria-selected="false">
+                      Jueves
+                      </button>
+                  </div>
+                </nav>
+                <div class="tab-content">
+                   <div id="martes" class="tab-pane fade show active" role="tabpanel"> 
+                      Create your own dynamic tab menu using the bootstrap nav tabs and open dynamic content on click of menus.
+                   </div>
+                   <div id="miercoles" class="tab-pane fade" role="tabpanel"> 
+                      Second tab menu. 
+                   </div>
+                   <div id="jueves" class="tab-pane fade" role="tabpanel"> 
+                      Third tab menu. 
+                   </div>
+                </div>
             </div>
           </div>
         </div>
         <small id="kenney">
-          Imágenes por <a href="https://kenney.nl/" target="_blank">Kenny</a>
+          Imágenes por <b><a class="no-style" href="https://kenney.nl/" target="_blank">Kenny</a></b>
         </small>
       </section>
 
