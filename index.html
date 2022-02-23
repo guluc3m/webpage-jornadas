@@ -13,7 +13,7 @@
     <meta property="og:description" content="GUL Jamón es el evento de videojuegos del GUL UC3M (gul.es) donde los videojuegos se hacen con software libre." />
     <meta property="og:locale" content="es_ES" />
     <!-- ====== FAVICON ====== -->
-    <link rel="icon" href="static/images/favicon.png" />    
+    <link rel="icon" href="static/images/favicon.png" />
     <link rel="stylesheet" href="static/style/bootstrap/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="static/style/styles.css" />
     <!-- ====== FONTS ====== -->
@@ -30,7 +30,7 @@
           <a class="navbar-brand" href="#animation-header" aria-current="page">
             <img class="logo-nav" src="static/images/logo_jamon.png" alt="Logo GUL Radio"/>
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                   data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -69,7 +69,7 @@
                   Charlas
                 </a>
               </li>
-            </ul> 
+            </ul>
           </div>
         </div>
       </nav>
@@ -110,7 +110,7 @@
         </div>
       </section>
 
-      <section id="charlas" class="pt-4 pb-4">
+      <section id="charlas" class="">
         <img src="static/images/separador2.png" id="separador-2" class="separator"/>
         <div class="row justify-content-center m-0 col-12 p-0 align-items-center">
           <div id="" class="col-lg-8 col-sm-12">
@@ -120,28 +120,42 @@
             <div class="text-title text-center p-3 mt-4">
             </div>
             <div class="text-desc border border-dark">
-                <nav>
-                  <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-                      <button class="nav-item nav-link active" data-toggle="tab" href="#martes" role="tab" aria-controls="nav-home" aria-selected="true">
-                      Martes
-                      </button>
-                      <button class="nav-item nav-link" data-toggle="tab" href="#miercoles" role="tab" aria-controls="nav-profile" aria-selected="false">
-                      Miércoles
-                      </button>
-                      <button class="nav-item nav-link" data-toggle="tab" href="#miercoles" role="tab" aria-controls="nav-profile" aria-selected="false">
-                      Jueves
-                      </button>
-                  </div>
-                </nav>
+                <ul class="nav nav-pills justify-content-center">
+                    <li class="nav-item">
+                      <button class="nav-link active" data-bs-toggle="tab" href="#martes">Martes</button>
+                    </li>
+                    <li class="nav-item">
+                      <button class="nav-link" data-bs-toggle="tab" href="#miercoles">Miércoles</button>
+                    </li>
+                    <li class="nav-item">
+                      <button class="nav-link" data-bs-toggle="tab" href="#jueves">Jueves</button>
+                    </li>
+                </ul>
+
                 <div class="tab-content">
-                   <div id="martes" class="tab-pane fade show active" role="tabpanel"> 
-                      Create your own dynamic tab menu using the bootstrap nav tabs and open dynamic content on click of menus.
+                   <div id="martes" class="tab-pane fade show active row pt-4" role="tabpanel">
+                       <div class="col-8 talk-desc">
+                           martes1
+                       </div>
+                       <div class="col-4 talk-list">
+                           martes2
+                       </div>
                    </div>
-                   <div id="miercoles" class="tab-pane fade" role="tabpanel"> 
-                      Second tab menu. 
+                   <div id="miercoles" class="tab-pane fade row pt-4" role="tabpanel">
+                       <div class="col-8 talk-desc">
+                           miercoles1
+                       </div>
+                       <div class="col-4 talk-list">
+                           miercoles2
+                       </div>
                    </div>
-                   <div id="jueves" class="tab-pane fade" role="tabpanel"> 
-                      Third tab menu. 
+                   <div id="jueves" class="tab-pane fade row pt-4" role="tabpanel">
+                       <div class="col-8 talk-desc">
+                           jueves1
+                       </div>
+                       <div class="col-4 talk-list">
+                           jueves2
+                       </div>
                    </div>
                 </div>
             </div>

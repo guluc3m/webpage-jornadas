@@ -95,13 +95,25 @@ section {
 }
 
 #charlas {
-  height: 60vh; /* La mitad de la pantalla */
-  /*align-items: center;
-  padding-top: 10vh !important;*/
   background-color: orange;
   background-image: url("../images/background-2-alt.png");
   background-size: cover;
   background-position: top;
+  padding: 5% 0;
+}
+
+#charlas .tab-content > .active {
+    display: flex !important;
+}
+
+#charlas .talk-desc {
+    min-height: 40vh;
+    background-color: red;
+}
+
+#charlas .talk-list {
+    min-height: 40vh;
+    background-color: green;
 }
 
 #kenney {
