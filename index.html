@@ -79,11 +79,11 @@
     <main>
       <!-- Bloque animación -->
       <section id="animation-header">
-          <img class="" src="static/images/banner2.png" alt="animación contando con iconos en qué consiste la GUL Jamón"/>
+          <img class="" src="static/images/banner2.png" alt="Banner publicitario. Que dice: 'Del X al Y de Abril. Totalmente online y gratuito'"/>
       </section>
 
       <section id="que-es" class="">
-        <img src="static/images/separador.png" id="separador-1" class="separator"/>
+        <img src="static/images/separador.png" id="separador-1" class="separator" alt="Imagen para separar visualmente las secciones. No es realmente relevante"/>
         <div class="row justify-content-center m-0 col-12 p-0 align-items-center">
           <div id="" class="col-lg-4 col-sm-12">
             <div class="text-title text-center p-3">
@@ -111,7 +111,7 @@
       </section>
 
       <section id="charlas" class="">
-        <img src="static/images/separador2.png" id="separador-2" class="separator"/>
+        <img src="static/images/separador2.png" id="separador-2" class="separator" alt="Imagen para separar visualmente las secciones. No es realmente relevante"/>
         <div class="row justify-content-center m-0 col-12 p-0 align-items-center">
           <div id="" class="col-lg-8 col-sm-12">
             <div class="text-desc border border-dark text-center">
@@ -133,30 +133,165 @@
                 </ul>
 
                 <div class="tab-content">
-                   <div id="martes" class="tab-pane fade show active row pt-4" role="tabpanel">
-                       <div class="col-8 talk-desc">
-                           martes1
-                       </div>
-                       <div class="col-4 talk-list">
-                           martes2
-                       </div>
-                   </div>
-                   <div id="miercoles" class="tab-pane fade row pt-4" role="tabpanel">
-                       <div class="col-8 talk-desc">
-                           miercoles1
-                       </div>
-                       <div class="col-4 talk-list">
-                           miercoles2
-                       </div>
-                   </div>
-                   <div id="jueves" class="tab-pane fade row pt-4" role="tabpanel">
-                       <div class="col-8 talk-desc">
-                           jueves1
-                       </div>
-                       <div class="col-4 talk-list">
-                           jueves2
-                       </div>
-                   </div>
+                    <div id="martes" class="tab-pane fade show active row pt-4" role="tabpanel">
+                        <div class="tab-content col-12 col-sm-8 talk-desc">
+                            <div id="charla-1-martes" class="row col-12 tab-pane fade show active" role="tabpanel" style="background-color: yellow">
+                                <h5 class="charla-titulo p-3">
+                                    Uso de shaders en Godot 3.5
+                                </h5>
+                                <div class="charla-ponente ps-3">Pepo Restrepo || 15:00 - 16:00</div>
+                                <hr>
+                                <div class="charla-desc ps-3 pe-3 pb-4">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </div>
+                            </div>
+                            <div id="charla-2-martes" class="row col-12 tab-pane fade" role="tabpanel" style="background-color: orange">
+                                <h5 class="charla-titulo p-3">
+                                    Uso de shaders en Godot 3.5
+                                </h5>
+                                <div class="charla-ponente ps-3">Pepo Restrepo || 15:00 - 16:00</div>
+                                <hr>
+                                <div class="charla-desc ps-3 pe-3 pb-4">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </div>
+                            </div>
+                            <div id="charla-3-martes" class="row col-12 tab-pane fade" role="tabpanel" style="background-color: pink">
+                                <h5 class="charla-titulo p-3">
+                                    Uso de shaders en Godot 3.5
+                                </h5>
+                                <div class="charla-ponente ps-3">Pepo Restrepo || 15:00 - 16:00</div>
+                                <hr>
+                                <div class="charla-desc ps-3 pe-3 pb-4">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 talk-list">
+                            <ul class="nav nav-pills justify-content-center row gy-5">
+                                <li class="nav-item">
+                                    <div class="nav-link active" data-bs-toggle="tab" href="#charla-1-martes" style="background-color: yellow">
+                                      Charla 1
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="nav-link" data-bs-toggle="tab" href="#charla-2-martes" style="background-color: orange">
+                                       Charla 2
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="nav-link" data-bs-toggle="tab" href="#charla-3-martes" style="background-color: pink">
+                                       Charla 3
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="miercoles" class="tab-pane fade row pt-4" role="tabpanel">
+                        <div class="tab-content col-12 col-sm-8 talk-desc">
+                            <div id="charla-1-miercoles" class="row col-12 tab-pane fade show active" role="tabpanel" style="background-color: yellow">
+                                <h5 class="charla-titulo p-3">
+                                    Uso de shaders en Godot 3.5
+                                </h5>
+                                <div class="charla-ponente ps-3">Pepo Restrepo || 15:00 - 16:00</div>
+                                <hr>
+                                <div class="charla-desc ps-3 pe-3 pb-4">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </div>
+                            </div>
+                            <div id="charla-2-miercoles" class="row col-12 tab-pane fade" role="tabpanel" style="background-color: orange">
+                                <h5 class="charla-titulo p-3">
+                                    Uso de shaders en Godot 3.5
+                                </h5>
+                                <div class="charla-ponente ps-3">Pepo Restrepo || 15:00 - 16:00</div>
+                                <hr>
+                                <div class="charla-desc ps-3 pe-3 pb-4">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </div>
+                            </div>
+                            <div id="charla-3-miercoles" class="row col-12 tab-pane fade" role="tabpanel" style="background-color: pink">
+                                <h5 class="charla-titulo p-3">
+                                    Uso de shaders en Godot 3.5
+                                </h5>
+                                <div class="charla-ponente ps-3">Pepo Restrepo || 15:00 - 16:00</div>
+                                <hr>
+                                <div class="charla-desc ps-3 pe-3 pb-4">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 talk-list">
+                            <ul class="nav nav-pills justify-content-center row gy-5">
+                                <li class="nav-item">
+                                    <div class="nav-link active" data-bs-toggle="tab" href="#charla-1-miercoles" style="background-color: yellow">
+                                       Charla 1
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="nav-link" data-bs-toggle="tab" href="#charla-2-miercoles" style="background-color: orange">
+                                       Charla 2
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="nav-link" data-bs-toggle="tab" href="#charla-3-miercoles" style="background-color: pink">
+                                       Charla 3
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="jueves" class="tab-pane fade row pt-4" role="tabpanel">
+                        <div class="tab-content col-12 col-sm-8 talk-desc">
+                            <div id="charla-1-jueves" class="row col-12 tab-pane fade show active" role="tabpanel" style="background-color: yellow">
+                                <h5 class="charla-titulo p-3">
+                                    Uso de shaders en Godot 3.5
+                                </h5>
+                                <div class="charla-ponente ps-3">Pepo Restrepo || 15:00 - 16:00</div>
+                                <hr>
+                                <div class="charla-desc ps-3 pe-3 pb-4">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </div>
+                            </div>
+                            <div id="charla-2-jueves" class="row col-12 tab-pane fade" role="tabpanel" style="background-color: orange">
+                                <h5 class="charla-titulo p-3">
+                                    Uso de shaders en Godot 3.5
+                                </h5>
+                                <div class="charla-ponente ps-3">Pepo Restrepo || 15:00 - 16:00</div>
+                                <hr>
+                                <div class="charla-desc ps-3 pe-3 pb-4">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </div>
+                            </div>
+                            <div id="charla-3-jueves" class="row col-12 tab-pane fade" role="tabpanel" style="background-color: pink">
+                                <h5 class="charla-titulo p-3">
+                                    Uso de shaders en Godot 3.5
+                                </h5>
+                                <div class="charla-ponente ps-3">Pepo Restrepo || 15:00 - 16:00</div>
+                                <hr>
+                                <div class="charla-desc ps-3 pe-3 pb-4">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 talk-list">
+                            <ul class="nav nav-pills justify-content-center row gy-5">
+                                <li class="nav-item">
+                                    <div class="nav-link active" data-bs-toggle="tab" href="#charla-1-jueves" style="background-color: yellow">
+                                       Charla 1
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="nav-link" data-bs-toggle="tab" href="#charla-2-jueves" style="background-color: orange">
+                                       Charla 2
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="nav-link" data-bs-toggle="tab" href="#charla-3-jueves" style="background-color: pink">
+                                       Charla 3
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
           </div>

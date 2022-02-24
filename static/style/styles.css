@@ -108,12 +108,20 @@ section {
 
 #charlas .talk-desc {
     min-height: 40vh;
-    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+#charlas .talk-desc > div {
+    min-height: 30vh;
+}
+
 
 #charlas .talk-list {
     min-height: 40vh;
-    background-color: green;
+    align-items: center;
+    display: flex;
 }
 
 #kenney {
