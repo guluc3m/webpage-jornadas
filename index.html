@@ -98,10 +98,10 @@
           <div id="pingu" class="d-flex align-items-center justify-content-center col-5 col-lg-2 col-sm-3">
             <img class="" alt="Un pingüino bailando" src="static/images/tuxAnimated.gif"/>
           </div>
-          <div id="" class="col-lg-4 col-sm-12">
+          <div id="" class="col-lg-4 col-sm-8 mt-sm-4">
             <div class="text-title text-center p-3"></div>
             <div class="text-desc border border-dark">
-                <img class="col-12" alt="" src="static/images/logo_jamon2.png"/>
+                <img class="col-12 mb-4" alt="" src="static/images/logo_jamon2.png"/>
                 <p>Esta edición, subtitulada <b>Charleta Edition</b>, pondrá el foco en charlas y talleres dada por gente de primer nivel, tanto por el lado académico como por el lado más divulgativo.</p>
                 <p> Todos ellos <b>totalmente gratuitos y online</b>.
                 </p>
@@ -113,14 +113,14 @@
       <section id="charlas" class="">
         <img src="static/images/separador2.png" id="separador-2" class="separator" alt="Imagen para separar visualmente las secciones. No es realmente relevante"/>
         <div class="row justify-content-center m-0 col-12 p-0 align-items-center">
-          <div id="" class="col-lg-8 col-sm-12">
+          <div id="" class="col-lg-7 col-sm-12">
             <div class="text-desc border border-dark text-center">
               A continuación podrás ver los días, horas y charlas que tendremos en esta edición.
             </div>
             <div class="text-title text-center p-3 mt-4">
             </div>
             <div class="text-desc border border-dark">
-                <ul class="nav nav-pills justify-content-center">
+                <ul id="dias-charlas" class="nav nav-pills justify-content-center">
                     <li class="nav-item">
                       <button class="nav-link active" data-bs-toggle="tab" href="#martes">Martes</button>
                     </li>
@@ -134,8 +134,8 @@
 
                 <div class="tab-content">
                     <div id="martes" class="tab-pane fade show active row pt-4" role="tabpanel">
-                        <div class="tab-content col-12 col-sm-8 talk-desc">
-                            <div id="charla-1-martes" class="row col-12 tab-pane fade show active" role="tabpanel" style="background-color: yellow">
+                        <div class="charlas tab-content col-12 col-sm-8 talk-desc">
+                            <div id="charla-1-martes" class="row col-11 tab-pane fade show active" role="tabpanel">
                                 <h5 class="charla-titulo p-3">
                                     Uso de shaders en Godot 3.5
                                 </h5>
@@ -145,7 +145,7 @@
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 </div>
                             </div>
-                            <div id="charla-2-martes" class="row col-12 tab-pane fade" role="tabpanel" style="background-color: orange">
+                            <div id="charla-2-martes" class="row col-12 tab-pane fade" role="tabpanel">
                                 <h5 class="charla-titulo p-3">
                                     Uso de shaders en Godot 3.5
                                 </h5>
@@ -155,7 +155,7 @@
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 </div>
                             </div>
-                            <div id="charla-3-martes" class="row col-12 tab-pane fade" role="tabpanel" style="background-color: pink">
+                            <div id="charla-3-martes" class="row col-12 tab-pane fade" role="tabpanel">
                                 <h5 class="charla-titulo p-3">
                                     Uso de shaders en Godot 3.5
                                 </h5>
@@ -166,32 +166,32 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-4 talk-list">
-                            <ul class="nav nav-pills justify-content-center row gy-5">
+                        <div class="col-12 col-sm-4 talk-list justify-content-center">
+                            <ul class="nav-charlas nav nav-pills row gy-5 col-10">
                                 <li class="nav-item">
-                                    <div class="nav-link active" data-bs-toggle="tab" href="#charla-1-martes" style="background-color: yellow">
+                                    <div class="p-0 nav-link active" data-bs-toggle="tab" href="#charla-1-martes">
                                         <div class="nav-titulo ps-3 pe-3">
                                             Uso de shaders en Godot 3.5
                                         </div>
-                                        <hr>
+                                        <hr class="m-2">
                                         <div class="nav-hora ps-3">15:00 - 16:00</div>
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <div class="nav-link" data-bs-toggle="tab" href="#charla-2-martes" style="background-color: orange">
+                                    <div class="p-0 nav-link" data-bs-toggle="tab" href="#charla-2-martes">
                                         <div class="nav-titulo ps-3 pe-3">
                                             Uso de shaders en Godot 3.5
                                         </div>
-                                        <hr>
+                                        <hr class="m-2">
                                         <div class="nav-hora ps-3">16:00 - 17:00</div>
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <div class="nav-link" data-bs-toggle="tab" href="#charla-3-martes" style="background-color: pink">
+                                    <div class="p-0 nav-link" data-bs-toggle="tab" href="#charla-3-martes">
                                         <div class="nav-titulo ps-3 pe-3">
                                             Uso de shaders en Godot 3.5
                                         </div>
-                                        <hr>
+                                        <hr class="m-2">
                                         <div class="nav-hora ps-3">17:00 - 18:00</div>
                                     </div>
                                 </li>
@@ -199,8 +199,8 @@
                         </div>
                     </div>
                     <div id="miercoles" class="tab-pane fade row pt-4" role="tabpanel">
-                        <div class="tab-content col-12 col-sm-8 talk-desc">
-                            <div id="charla-1-miercoles" class="row col-12 tab-pane fade show active" role="tabpanel" style="background-color: yellow">
+                        <div class="charlas tab-content col-12 col-sm-8 talk-desc">
+                            <div id="charla-1-miercoles" class="row col-11 tab-pane fade show active" role="tabpanel">
                                 <h5 class="charla-titulo p-3">
                                     Uso de shaders en Godot 3.5
                                 </h5>
@@ -210,7 +210,7 @@
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 </div>
                             </div>
-                            <div id="charla-2-miercoles" class="row col-12 tab-pane fade" role="tabpanel" style="background-color: orange">
+                            <div id="charla-2-miercoles" class="row col-12 tab-pane fade" role="tabpanel">
                                 <h5 class="charla-titulo p-3">
                                     Uso de shaders en Godot 3.5
                                 </h5>
@@ -220,7 +220,7 @@
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 </div>
                             </div>
-                            <div id="charla-3-miercoles" class="row col-12 tab-pane fade" role="tabpanel" style="background-color: pink">
+                            <div id="charla-3-miercoles" class="row col-12 tab-pane fade" role="tabpanel">
                                 <h5 class="charla-titulo p-3">
                                     Uso de shaders en Godot 3.5
                                 </h5>
@@ -231,32 +231,32 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-4 talk-list">
-                            <ul class="nav nav-pills justify-content-center row gy-5">
+                        <div class="col-12 col-sm-4 talk-list justify-content-center">
+                            <ul class="nav-charlas nav nav-pills row gy-5 col-10">
                                 <li class="nav-item">
-                                    <div class="nav-link active" data-bs-toggle="tab" href="#charla-1-miercoles" style="background-color: yellow">
+                                    <div class="p-0 nav-link active" data-bs-toggle="tab" href="#charla-1-miercoles">
                                         <div class="nav-titulo ps-3 pe-3">
                                             Uso de shaders en Godot 3.5
                                         </div>
-                                        <hr>
+                                        <hr class="m-2">
                                         <div class="nav-hora ps-3">15:00 - 16:00</div>
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <div class="nav-link" data-bs-toggle="tab" href="#charla-2-miercoles" style="background-color: orange">
+                                    <div class="p-0 nav-link" data-bs-toggle="tab" href="#charla-2-miercoles">
                                         <div class="nav-titulo ps-3 pe-3">
                                             Uso de shaders en Godot 3.5
                                         </div>
-                                        <hr>
+                                        <hr class="m-2">
                                         <div class="nav-hora ps-3">16:00 - 17:00</div>
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <div class="nav-link" data-bs-toggle="tab" href="#charla-3-miercoles" style="background-color: pink">
+                                    <div class="p-0 nav-link" data-bs-toggle="tab" href="#charla-3-miercoles">
                                         <div class="nav-titulo ps-3 pe-3">
                                             Uso de shaders en Godot 3.5
                                         </div>
-                                        <hr>
+                                        <hr class="m-2">
                                         <div class="nav-hora ps-3">17:00 - 18:00</div>
                                     </div>
                                 </li>
@@ -264,8 +264,8 @@
                         </div>
                     </div>
                     <div id="jueves" class="tab-pane fade row pt-4" role="tabpanel">
-                        <div class="tab-content col-12 col-sm-8 talk-desc">
-                            <div id="charla-1-jueves" class="row col-12 tab-pane fade show active" role="tabpanel" style="background-color: yellow">
+                        <div class="charlas tab-content col-12 col-sm-8 talk-desc">
+                            <div id="charla-1-jueves" class="row col-11 tab-pane fade show active" role="tabpanel">
                                 <h5 class="charla-titulo p-3">
                                     Uso de shaders en Godot 3.5
                                 </h5>
@@ -275,7 +275,7 @@
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 </div>
                             </div>
-                            <div id="charla-2-jueves" class="row col-12 tab-pane fade" role="tabpanel" style="background-color: orange">
+                            <div id="charla-2-jueves" class="row col-12 tab-pane fade" role="tabpanel">
                                 <h5 class="charla-titulo p-3">
                                     Uso de shaders en Godot 3.5
                                 </h5>
@@ -285,7 +285,7 @@
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 </div>
                             </div>
-                            <div id="charla-3-jueves" class="row col-12 tab-pane fade" role="tabpanel" style="background-color: pink">
+                            <div id="charla-3-jueves" class="row col-12 tab-pane fade" role="tabpanel">
                                 <h5 class="charla-titulo p-3">
                                     Uso de shaders en Godot 3.5
                                 </h5>
@@ -296,32 +296,32 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-4 talk-list">
-                            <ul class="nav nav-pills justify-content-center row gy-5">
+                        <div class="col-12 col-sm-4 talk-list justify-content-center">
+                            <ul class="nav-charlas nav nav-pills row gy-5 col-10">
                                 <li class="nav-item">
-                                    <div class="nav-link active" data-bs-toggle="tab" href="#charla-1-jueves" style="background-color: yellow">
+                                    <div class="p-0 nav-link active" data-bs-toggle="tab" href="#charla-1-jueves">
                                         <div class="nav-titulo ps-3 pe-3">
                                             Uso de shaders en Godot 3.5
                                         </div>
-                                        <hr>
+                                        <hr class="m-2">
                                         <div class="nav-hora ps-3">15:00 - 16:00</div>
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <div class="nav-link" data-bs-toggle="tab" href="#charla-2-jueves" style="background-color: orange">
+                                    <div class="p-0 nav-link" data-bs-toggle="tab" href="#charla-2-jueves">
                                         <div class="nav-titulo ps-3 pe-3">
                                             Uso de shaders en Godot 3.5
                                         </div>
-                                        <hr>
+                                        <hr class="m-2">
                                         <div class="nav-hora ps-3">16:00 - 17:00</div>
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <div class="nav-link" data-bs-toggle="tab" href="#charla-3-jueves" style="background-color: pink">
+                                    <div class="p-0 nav-link" data-bs-toggle="tab" href="#charla-3-jueves">
                                         <div class="nav-titulo ps-3 pe-3">
                                             Uso de shaders en Godot 3.5
                                         </div>
-                                        <hr>
+                                        <hr class="m-2">
                                         <div class="nav-hora ps-3">17:00 - 18:00</div>
                                     </div>
                                 </li>

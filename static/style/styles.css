@@ -124,11 +124,38 @@ section {
     display: flex;
 }
 
+#dias-charlas li .nav-link.active {
+    background-color: #591728;
+    color: white !important;
+}
+
+.charlas > div {
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(../images/charla-background.png) 20 fill;
+}
+
+.nav-charlas li .nav-link.active {
+    background-color: transparent !important;
+}
+
+.nav-charlas li .nav-link.active {
+    border: 10px solid transparent;
+    /*padding: 15px;*/
+    border-image: url(../images/charla-background-active.png) 10 fill;
+}
+
+.nav-charlas li .nav-link {
+    border: 10px solid transparent;
+    /*padding: 15px;*/
+    border-image: url(../images/charla-background-unactive.png) 10 fill;
+}
+
 #kenney {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  color: white;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: white;
 }
 
 /* <<<<<<  MAIN SECTION SECTION END >>>>>> */
@@ -169,6 +196,9 @@ section {
 }
 
 @media screen and (max-width: 576px) {
+    #que-es, #charlas {
+        padding: 10% 0;
+    }
 }
 
 /* <<<<<<  MEDIA QUERY SECTION END >>>>>> */
