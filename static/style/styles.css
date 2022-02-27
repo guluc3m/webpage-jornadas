@@ -66,13 +66,26 @@ section {
 
 #animation-header img {
   width: -moz-available;
+  width: -webkit-fill-available;
 }
 
-.separator {
+.separador {
   top: -2.5vh;
   position: absolute;
-  z-index: 10;
-  height: auto;
+  width: 100%;
+  padding: 30px;
+}
+
+#separador1 {
+  background-image: url("../images/separador-alt.png");
+  background-position: center;
+  background-repeat: repeat-x;
+}
+
+#separador2 {
+  background-image: url("../images/separador2-alt.png");
+  background-position: center;
+  background-repeat: repeat-x;
 }
 
 #que-es {
