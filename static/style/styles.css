@@ -61,10 +61,7 @@ section {
 /* ======  MAIN SECTION START ====== */
 
 #animation-header {
-  /* height: 45vh; /* ordena */
-  /* height: 38.5vh; /* Movil */ 
   margin-top: 10vh !important;
-  background-color: green;
 }
 
 #animation-header img {
@@ -95,7 +92,6 @@ section {
 }
 
 #charlas {
-  background-color: orange;
   background-image: url("../images/background-2-alt.png");
   background-size: cover;
   background-position: top;
@@ -198,6 +194,10 @@ section {
 @media screen and (max-width: 576px) {
     #que-es, #charlas {
         padding: 10% 0;
+    }
+
+    #charlas .tab-content > .active {
+        flex-flow: column-reverse;
     }
 }
 
