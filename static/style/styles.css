@@ -104,6 +104,15 @@ section {
   width: 100%;
 }
 
+#participantes {
+    padding: 5% 0;
+}
+
+#participantes .participante img {
+    border: 0.5rem solid black;
+    border-radius: 100%;
+}
+
 #charlas {
   background-image: url("../images/background-2-alt.png");
   background-size: cover;
