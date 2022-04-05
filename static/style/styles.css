@@ -1,9 +1,15 @@
+@font-face {
+  font-family: Lato;
+  src: url(fonts/Lato.ttf);
+}
+
 html {
   width: 100% !important;
   cursor: url("../images/kenny-assets/ui/Vector/cursor.svg"), auto;
 }
 * {
   box-sizing: border-box;
+  font-family: Lato;
 }
 
 a:hover {
@@ -109,8 +115,15 @@ section {
 }
 
 #participantes .participante img {
-    border: 0.5rem solid black;
-    border-radius: 100%;
+    border: 0.75rem solid black;
+    border-radius: 50%;
+    background-color: black;
+
+    border-bottom-color: #d8dbe2;
+    border-right-color: #d8dbe2;
+
+    border-left-color: #39a5db;
+    border-top-color: #39a5db;
 }
 
 #charlas {
@@ -137,7 +150,7 @@ section {
 
 
 #charlas .talk-list {
-    min-height: 40vh;
+    /*min-height: 40vh;*/
     align-items: center;
     display: flex;
 }
@@ -147,7 +160,7 @@ section {
     color: white !important;
 }
 
-.charlas > div {
+.charla > div {
     border: 10px solid transparent;
     padding: 15px;
     border-image: url(../images/charla-background.png) 20 fill;
@@ -218,7 +231,11 @@ section {
         padding: 10% 0;
     }
 
-    #charlas .tab-content > .active {
+    .charla {
+      margin-top: 5%;
+    }
+
+    #charlas .dia.active {
         flex-flow: column-reverse;
     }
 }
