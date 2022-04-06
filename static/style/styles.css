@@ -12,7 +12,7 @@ html {
   font-family: Lato;
 }
 
-a:hover {
+a:hover, .nav-link:hover  {
   cursor: url("../images/icon/pointer.svg"), auto;
 }
 
