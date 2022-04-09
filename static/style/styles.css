@@ -190,6 +190,9 @@ section {
 }
 
 /* <<<<<<  MAIN SECTION SECTION END >>>>>> */
+.btn-primary {
+  background-color: rgb(0, 117, 176);
+}
 
 .text-title {
   background-color: rgb(0, 117, 176);
