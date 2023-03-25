@@ -89,7 +89,7 @@ section {
 }
 
 #separador2 {
-  background-image: url("../images/separador2-alt.png");
+  background-image: url("../images/separador-alt.png"); /* cambiada por la imagen del separador 1 tb, sin los colaboradores no se veía bien */
   background-position: center;
   background-repeat: repeat-x;
 }
