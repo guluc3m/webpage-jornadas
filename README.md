@@ -1,1 +1,1 @@
-Web para la difusión de la GUL Jamón 2022: Charleta Edition
+Web para la difusión de las XXXV Jornadas Técnicas del GUL.
