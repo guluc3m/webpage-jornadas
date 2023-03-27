@@ -189,6 +189,15 @@ section {
     color: white;
 }
 
+.aula::before, .nav-aula::before {
+    content: "Aula: ";
+    font-weight: bold;
+}
+
+.nav-aula {
+    margin-right: 12px;
+}
+
 /* ====== TALK TYPE CLASSES ====== */
 .talk-charla, .talk-taller {
     display: inline-block;
