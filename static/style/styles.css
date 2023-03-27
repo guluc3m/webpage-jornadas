@@ -189,12 +189,16 @@ section {
     color: white;
 }
 
+/* ====== TALK TYPE CLASSES ====== */
 .talk-charla, .talk-taller {
+    display: inline-block;
     border: 10px solid transparent;
     border-radius: 3px;
     font-weight: bold;
     font-size: 85%;
     margin-left: 10px;
+    vertical-align: middle;
+    horiz-align: center;
 }
 
 .talk-charla {
@@ -206,7 +210,25 @@ section {
 }
 
 .talk-icon {
-    margin: 0 8px 0 0;
+    padding-right: 8px;
+}
+
+/* ====== SMALL TALK TYPE CLASSES (FOR THE NAVBAR) ====== */
+.talk-small {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+}
+
+.talk-small-icon {
+    padding-right: 0;
+}
+
+.nav-titulo {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    align-items: center;
 }
 
 /* <<<<<<  MAIN SECTION SECTION END >>>>>> */
@@ -218,6 +240,7 @@ section {
   background-color: rgb(0, 117, 176);
   color: #ffffff;
 }
+
 .text-desc {
   text-align: justify;
   padding: 20px;
