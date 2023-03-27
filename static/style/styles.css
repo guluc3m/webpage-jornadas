@@ -189,6 +189,26 @@ section {
     color: white;
 }
 
+.talk-charla, .talk-taller {
+    border: 10px solid transparent;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 85%;
+    margin-left: 10px;
+}
+
+.talk-charla {
+    background-color: lightskyblue;
+}
+
+.talk-taller {
+    background-color: #ffbd42;
+}
+
+.talk-icon {
+    margin: 0 8px 0 0;
+}
+
 /* <<<<<<  MAIN SECTION SECTION END >>>>>> */
 .btn-primary {
   background-color: rgb(0, 117, 176);
