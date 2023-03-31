@@ -96,9 +96,8 @@ section {
 
 #que-es {
   /*height: 60vh; /* La mitad de la pantalla */
-  background-image: url("../images/pattern.jpg");
+  background-image: url("../images/background1.jpg");
   background-position: center;
-  background-repeat: repeat;
   padding: 5% 0;
 }
 
@@ -127,10 +126,10 @@ section {
 }
 
 #charlas {
-  background-image: url("../images/banner3.png");
-  background-size: cover;
-  background-position: top;
-  padding: 5% 0;
+    background-image: url("../images/background2.png");
+    background-size: cover;
+    background-position: top;
+    padding: 5% 0;
 }
 
 #charlas .tab-content > .active {
