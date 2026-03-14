@@ -1,14 +1,31 @@
-/*** GLOBAL ***/
+/************* GLOBAL *************/
 :root {
     font-family: Geneva_9, cursive;
 }
 
 .title {
-    font-family: Cantarell
+    font-family: Chicago, cursive;
 }
 
 .paragraph {
-    font-family: Geneva
+    font-family: Geneva_9, cursive;
+}
+
+.hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+body > div {
+    width: 80%;
+    margin: 2vh auto;
 }
 
 
@@ -17,13 +34,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    width: 80%;
-    margin: 2vh auto;
     min-height: 90vh;
 }
 
-/*** HEADER ***/
+/************* HEADER *************/
 #shortcuts-container {
     margin: 0 auto 0 0 !important;
     font-size: 25px;
@@ -48,7 +62,7 @@
     margin: 0 auto 6px auto;
 }
 
-/*** MAIN CONTENT ***/
+/************* MAIN CONTENT *************/
 #content {
     margin: 10px auto auto auto;
 }
@@ -72,9 +86,88 @@
     font-size: 2rem;
 }
 
-/*** FOOTER ***/
+/************* CHARLAS *************/
+#selector-dias {
+    width: 60%;
+    margin: 0.2rem auto;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.botones-dias {
+    font-size: 25px !important;
+    padding: 0 6% !important;
+    margin: 0 auto 10px !important;
+}
+
+/* ----------------------------- */
+
+.charlas-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+    height: fit-content;
+
+    font-size: 35px;
+}
+
+.charlas-diarias {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+
+    padding: 15px;
+}
+
+.charlas-selector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 40%;
+
+    margin-right: auto;
+    padding: 2% 3%;
+}
+
+.charlas-selector label {
+    font-size: 25px;
+}
+
+.boton-charla {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 10px auto;
+}
+
+.boton-charla label {
+    justify-content: left;
+}
+
+/* ----------------------------- */
+
+.charlas-descripcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 60%;
+
+    margin: 20px 15px 20px auto;
+}
+
+.descripcion-ponencia {
+    display: flex;
+    flex-direction: row;
+}
+
+/************* FOOTER *************/
 #footer {
-    width: 80%;
     margin: 0 auto auto auto;
 }
 
