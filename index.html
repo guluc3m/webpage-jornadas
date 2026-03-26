@@ -19,6 +19,8 @@
 	<script type="text/javascript" src="static/js/script.js" defer></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!-- everything default and using `weight: 100` -->
+	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
 	<!-- ====== LIBS ====== -->
 	<link rel="stylesheet" href="https://unpkg.com/@sakun/system.css"/>
 </head>
@@ -26,17 +28,48 @@
 <body>
 
 <div id="main-container" class="standard-dialog">
-	<ul id="shortcuts-container" role="menu-bar">
-		<li role="menu-item" tabindex="0" aria-haspopup="false"><a target="_blank" href="https://gul.uc3m.es/">Página
-			principal</a></li>
-		<li role="menu-item" tabindex="0" aria-haspopup="false"><a target="_blank" href="https://gul.uc3m.es/ftp">NextCloud
-			FTP</a></li>
-		<li role="menu-item" tabindex="0" aria-haspopup="false"><a target="_blank" href="https://gul.uc3m.es/jamon/">GUL
-			Jamón</a></li>
-		<li role="menu-item" tabindex="0" aria-haspopup="false"><a target="_blank" href="https://gul.uc3m.es/zoe/">GUL
-			Zoe</a></li>
-		<li role="menu-item" tabindex="0" aria-haspopup="false"><a target="_blank" href="https://gul.uc3m.es/radio/">GUL
-			Radio</a></li>
+
+	<!--Mostrado para pantallas grandes-->
+	<ul id="shortcuts-container-big" role="menu-bar">
+		<li role="menu-item" tabindex="0" aria-haspopup="false">
+			<a target="_blank" href="https://gul.uc3m.es/"><span class="material-symbols-outlined">link_2</span>
+				Página principal</a></li>
+		<li role="menu-item" tabindex="0" aria-haspopup="false">
+			<a target="_blank" href="https://gul.uc3m.es/ftp"><span class="material-symbols-outlined">link_2</span>
+				Cloud FTP</a></li>
+		<li role="menu-item" tabindex="0" aria-haspopup="false">
+			<a target="_blank" href="https://gul.uc3m.es/jamon/"><span class="material-symbols-outlined">link_2</span>
+				GUL Jamón</a></li>
+		<li role="menu-item" tabindex="0" aria-haspopup="false">
+			<a target="_blank" href="https://gul.uc3m.es/zoe/"><span class="material-symbols-outlined">link_2</span>
+				GUL Zoe</a></li>
+		<li role="menu-item" tabindex="0" aria-haspopup="false">
+			<a target="_blank" href="https://gul.uc3m.es/radio/"><span class="material-symbols-outlined">link_2</span>
+				GUL Radio</a></li>
+	</ul>
+
+	<!--Version de movil-->
+	<ul id="shortcuts-container-small" role="menu-bar">
+		<li role="menu-item" tabindex="0" aria-haspopup="true">
+			<span class="material-symbols-outlined">arrow_drop_down</span> Nuestras páginas
+			<ul role="menu">
+				<li role="menu-item" tabindex="0" aria-haspopup="false">
+					<a target="_blank" href="https://gul.uc3m.es/"><span class="material-symbols-outlined">link_2</span>
+						Página principal</a></li>
+				<li role="menu-item" tabindex="0" aria-haspopup="false">
+					<a target="_blank" href="https://gul.uc3m.es/ftp"><span class="material-symbols-outlined">link_2</span>
+						Cloud FTP</a></li>
+				<li role="menu-item" tabindex="0" aria-haspopup="false">
+					<a target="_blank" href="https://gul.uc3m.es/jamon/"><span class="material-symbols-outlined">link_2</span>
+						GUL Jamón</a></li>
+				<li role="menu-item" tabindex="0" aria-haspopup="false">
+					<a target="_blank" href="https://gul.uc3m.es/zoe/"><span class="material-symbols-outlined">link_2</span>
+						GUL Zoe</a></li>
+				<li role="menu-item" tabindex="0" aria-haspopup="false">
+					<a target="_blank" href="https://gul.uc3m.es/radio/"><span class="material-symbols-outlined">link_2</span>
+						GUL Radio</a></li>
+			</ul>
+		</li>
 	</ul>
 
 	<div id="heading">
@@ -62,8 +95,7 @@
 				<div class="title-bar">
 					<h1 class="title">Anteriores</h1>
 				</div>
-				<iframe width="560" height="315"
-				        src="https://www.youtube.com/embed/KhkrQXv0t-Q?si=Bfr0n_qcOYJLvmDP&amp;start=3560"
+				<iframe src="https://www.youtube.com/embed/KhkrQXv0t-Q?si=Bfr0n_qcOYJLvmDP&amp;start=3560"
 				        title="YouTube video player" frameborder="0"
 				        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 				        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

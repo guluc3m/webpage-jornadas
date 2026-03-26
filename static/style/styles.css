@@ -5,6 +5,14 @@
 
 .title {
     font-family: Chicago, cursive;
+
+    @media (max-width: 1200px) {
+        font-size: 1.3rem !important;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 1.6rem !important;
+    }
 }
 
 .paragraph {
@@ -24,8 +32,15 @@
 }
 
 body > div {
-    width: 80%;
-    margin: 2vh auto;
+    @media (max-width: 1200px) {
+        width: 90%;
+        margin: 1vh auto;
+    }
+
+    @media (min-width: 1200px) {
+        width: 80%;
+        margin: 2vh auto;
+    }
 }
 
 
@@ -38,9 +53,40 @@ body > div {
 }
 
 /************* HEADER *************/
-#shortcuts-container {
+#shortcuts-container-big {
     margin: 0 auto 0 0 !important;
     font-size: 25px;
+
+    @media (max-width: 730px) {
+        /* hidden */
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+    }
+}
+
+#shortcuts-container-small {
+    margin: 0 auto 0 0 !important;
+    font-size: 180%;
+
+    @media (min-width: 730px) {
+        /* hidden */
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+    }
 }
 
 #heading {
@@ -70,15 +116,41 @@ body > div {
 #introduction {
     display: flex;
     flex-direction: row;
+
+    @media (max-width: 1200px) {
+        flex-direction: column;
+    }
 }
 
 #introduction .window {
-    min-height: 315px !important;
+    @media (min-width: 1200px) {
+        width: 80% !important;
+        margin: 5px 10px;
+    }
+
+    @media (max-width: 1200px) {
+        width: auto !important;
+        margin: 5px 10px;
+
+        min-width: auto !important; /* Esta mierda */
+    }
+}
+
+#introduction .title-bar, #introduction .separator {
+    min-width: 100%;
 }
 
 #introduction .window p {
     padding: 5px 15px;
-    width: 560px;
+}
+
+#introduction .window > div {
+    max-width: 60vw;
+}
+
+#introduction .window > iframe {
+    width: 100% !important;
+    height: 100% !important;
 }
 
 #creditos {
@@ -121,6 +193,11 @@ body > div {
     height: 100%;
 
     padding: 15px;
+
+    @media (max-width: 730px) {
+        flex-direction: column;
+        padding: 0;
+    }
 }
 
 .charlas-selector {
@@ -133,6 +210,12 @@ body > div {
 
     margin-right: auto;
     padding: 2% 3%;
+
+    @media (max-width: 730px) {
+        width: auto;
+        margin: auto;
+        padding: 5% 0 0 0;
+    }
 }
 
 .charlas-selector label {
@@ -144,6 +227,11 @@ body > div {
     flex-direction: column;
     width: 70%;
     margin: 10px auto;
+
+    @media (max-width: 730px) {
+        width: 90%;
+        margin: auto;
+    }
 }
 
 .boton-charla > label {
@@ -164,6 +252,11 @@ body > div {
     width: 60%;
 
     margin: 20px 15px 20px auto;
+
+    @media (max-width: 730px) {
+        margin: 8px auto;
+        width: 90%;
+    }
 }
 
 .descripcion-ponencia {
@@ -184,11 +277,19 @@ body > div {
     align-content: center;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 800px) {
+        flex-direction: column;
+    }
 }
 
 #colaboraciones img {
     width: 30%;
     margin: 15px 30px 15px;
+
+    @media (max-width: 800px) {
+        width: 80%;
+    }
 }
 
 
