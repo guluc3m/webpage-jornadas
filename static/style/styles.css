@@ -101,11 +101,15 @@ body > div {
     justify-content: center;
 
     margin: 2rem auto 3rem auto;
+
+    @media (max-width: 730px) {
+        margin: 0 auto 1rem auto;
+    }
 }
 
 #heading h2 {
     font-size: 3rem;
-    margin-bottom: 6px;
+    margin: 12px auto 6px auto;
 }
 
 #heading h3 {
@@ -182,12 +186,21 @@ body > div {
     align-items: center;
     justify-content: center;
     display: flex;
+
+    @media (max-width: 730px) {
+        width: 100%;
+    }
 }
 
 .botones-dias {
     font-size: 25px !important;
     padding: 0 6% !important;
     margin: 0 auto 10px !important;
+
+    @media (max-width: 730px) {
+        font-size: 20px !important;
+        margin: 0 3px 10px !important;
+    }
 }
 
 /* ----------------------------- */
@@ -246,7 +259,7 @@ body > div {
 
     @media (max-width: 730px) {
         width: 90%;
-        margin: auto;
+        margin: auto auto 20px;
     }
 }
 
@@ -275,9 +288,22 @@ body > div {
     }
 }
 
+.charlas-descripcion > p {
+    margin: 5px auto;
+}
+
 .descripcion-ponencia {
     display: flex;
     flex-direction: row;
+
+    @media (max-width: 730px) {
+        flex-direction: column;
+
+        /* La concha de su mare tiene que estar pegadita */
+        :last-child {
+            margin-left: 0 !important;
+        }
+    }
 }
 
 /************* COLABORACIONES *************/

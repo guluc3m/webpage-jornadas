@@ -31,8 +31,8 @@ function fillDescription(day_index, talk_index) {
     // Modificar el unico contenedor que hay
     desc_titulo.textContent = ch.titulo;
     // Al igual que los botones, dos cotenedores con info distinta
-    desc_ponencia.children[0].textContent = `${ch.ponente} || ${ch.horario}`;
-    desc_ponencia.children[1].textContent = ch.aula;
+    desc_ponencia.children[0].textContent = ch.ponente;
+    desc_ponencia.children[1].textContent = `${ch.horario} || ${ch.aula}`;
     desc_info.textContent = ch.descripcion;
 }
 
