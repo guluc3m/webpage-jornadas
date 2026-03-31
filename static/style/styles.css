@@ -15,8 +15,13 @@
     }
 }
 
-.paragraph {
+.title-bar, .separator {
+    min-width: 100%;
+}
+
+p, .paragraph {
     font-family: Geneva_9, cursive;
+    font-size: 2rem !important;
 }
 
 .hidden {
@@ -132,6 +137,8 @@ body > div {
 }
 
 #introduction .window {
+    display: flex;
+
     @media (min-width: 1200px) {
         width: 80% !important;
         min-height: 320px !important;
@@ -151,12 +158,54 @@ body > div {
     }
 }
 
-#introduction .title-bar, #introduction .separator {
-    min-width: 100%;
+#content .window {
+    display: flex;
+
+    @media (max-width: 1200px) {
+        width: auto !important;
+        margin: 5px 10px;
+
+        /* Esta mierda es necesaria para que las ventanas no hagan overflow */
+        min-width: auto !important;
+
+        iframe {
+            min-height: 48vw !important;
+        }
+    }
 }
 
-#introduction .window p {
+/* El div externo con la descripcion de las jornadas
+   esta fuera de introduction
+ */
+#introduction .window div, #content > .window div {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#introduction .window p, #content > .window p {
     padding: 5px 15px;
+}
+
+#descripcion-gul {
+    display: flex;
+    flex-direction: row;
+
+    margin: auto 5%;
+
+    @media (max-width: 730px) {
+        flex-direction: column;
+        margin: auto 1%;
+    }
+}
+
+#descripcion-gul img {
+    width: 8vw;
+
+    @media (max-width: 730px) {
+        display: none;
+    }
 }
 
 #introduction .window > iframe {
@@ -304,6 +353,11 @@ body > div {
             margin-left: 0 !important;
         }
     }
+}
+
+#inscripcion {
+    margin-top: 20px;
+    font-size: 2rem;
 }
 
 /************* COLABORACIONES *************/
