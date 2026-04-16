@@ -1,297 +1,400 @@
-@font-face {
-  font-family: Lato;
-  src: url(./fonts/Lato.ttf);
+/************* GLOBAL *************/
+:root {
+    font-family: Geneva_9, cursive;
 }
 
-html {
-  width: 100% !important;
-  cursor: url("../images/icon/cursor.svg"), auto;
-}
-* {
-  box-sizing: border-box;
-  font-family: Lato;
+.title {
+    font-family: Chicago, cursive;
+
+    @media (max-width: 1200px) {
+        font-size: 1.3rem !important;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 1.6rem !important;
+    }
 }
 
-a:hover, .nav-link:hover, button:hover {
-  cursor: url("../images/icon/pointer.svg"), auto;
+.title-bar, .separator {
+    min-width: 100%;
 }
 
-body {
-  overflow-x: hidden;
+p, .paragraph {
+    font-family: Geneva_9, cursive;
+    font-size: 2rem !important;
 }
 
-section {
-  position: relative;
+.hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
 }
 
-.no-style {
-  text-decoration: inherit;
-  color: inherit;
+.wb-icon {
+    width: 20px;
+    align-content: center;
 }
 
-/* ======  NAV SECTION START ====== */
-#navbar {
-  background-color: rgb(255,255,255) !important;
-  box-shadow: 0px 2px 10px black;
-  min-height: 10vh;
-}
-.logo-nav {
-  width: 7.5rem;
-}
-.image-nav {
-  width: 2rem;
-}
-.nav-container-icon > .nav-item {
-  margin-right: 20px;
-  transition: ease 0.5s;
-  border-radius: 40px;
-  align-items: center;
-}
-.nav-container-icon > .nav-item:hover {
-  background-color: #d7d8d8;
-}
-.nav-container-text > .nav-item {
-  transition: ease 0.5s;
-  border-radius: 10px;
-  margin-right: 10px;
-}
-.nav-link {
-  color: black !important;
-}
-.nav-container-text > .nav-item:hover {
-  background-color: #d7d8d8;
-  transform: scale(1.1);
-}
-/* <<<<<<  NAV SECTION END >>>>>> */
+body > div {
+    @media (max-width: 1200px) {
+        width: 90%;
+        margin: 1vh auto;
+    }
 
-/* ======  MAIN SECTION START ====== */
-
-#animation-header {
-  margin-top: 10vh !important;
+    @media (min-width: 1200px) {
+        width: 80%;
+        margin: 2vh auto;
+    }
 }
 
-#animation-header img {
-  width: -moz-available;
-  width: -webkit-fill-available;
-}
 
-.separador {
-  top: -2.5vh;
-  position: absolute;
-  width: 100%;
-  padding: 30px;
-}
-
-#separador1 {
-  background-image: url("../images/separador-alt.png");
-  background-position: center;
-  background-repeat: repeat-x;
-}
-
-#separador2 {
-  background-image: url("../images/separador-alt.png"); /* cambiada por la imagen del separador 1 tb, sin los colaboradores no se veía bien */
-  background-position: center;
-  background-repeat: repeat-x;
-}
-
-#que-es {
-  /*height: 60vh; /* La mitad de la pantalla */
-  background-image: url("../images/background1.jpg");
-  background-position: center;
-  padding: 5% 0;
-}
-
-#que-es>.row, #charlas>.row  {
-  height: 100%;
-}
-
-#pingu img {
-  width: 100%;
-}
-
-#participantes {
-    padding: 5% 0;
-}
-
-#participantes .participante img {
-    border: 0.75rem solid black;
-    border-radius: 50%;
-    background-color: black;
-
-    border-bottom-color: #d8dbe2;
-    border-right-color: #d8dbe2;
-
-    border-left-color: #39a5db;
-    border-top-color: #39a5db;
-}
-
-#charlas {
-    background-image: url("../images/background2.png");
-    background-size: cover;
-    background-position: top;
-    padding: 5% 0;
-}
-
-#charlas .tab-content > .active {
-    display: flex !important;
-}
-
-#charlas .talk-desc {
-    min-height: 40vh;
+#main-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+
+/************* HEADER *************/
+#shortcuts-container-big {
+    margin: 0 auto 0 0 !important;
+    font-size: 25px;
+
+    @media (max-width: 730px) {
+        /* hidden */
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+    }
+}
+
+#shortcuts-container-small {
+    margin: 0 auto 0 0 !important;
+    font-size: 180%;
+
+    @media (min-width: 730px) {
+        /* hidden */
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+    }
+}
+
+#heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 2rem auto 3rem auto;
+
+    @media (max-width: 730px) {
+        margin: 0 auto 1rem auto;
+    }
+}
+
+#heading h2 {
+    font-size: 3rem;
+    margin: 12px auto 6px auto;
+}
+
+#heading h3 {
+    font-size: 3.5rem;
+    margin: 0 auto 6px auto;
+}
+
+/************* MAIN CONTENT *************/
+#content {
+    margin: 10px auto auto auto;
+}
+
+#introduction {
+    display: flex;
+    flex-direction: row;
+
+    @media (max-width: 1200px) {
+        flex-direction: column;
+    }
+}
+
+#introduction .window {
+    display: flex;
+
+    @media (min-width: 1200px) {
+        width: 80% !important;
+        min-height: 320px !important;
+        margin: 5px 10px;
+    }
+
+    @media (max-width: 1200px) {
+        width: auto !important;
+        margin: 5px 10px;
+
+        /* Esta mierda es necesaria para que las ventanas no hagan overflow */
+        min-width: auto !important;
+
+        iframe {
+            min-height: 48vw !important;
+        }
+    }
+}
+
+#content .window {
+    display: flex;
+
+    @media (max-width: 1200px) {
+        width: auto !important;
+        margin: 5px 10px;
+
+        /* Esta mierda es necesaria para que las ventanas no hagan overflow */
+        min-width: auto !important;
+
+        iframe {
+            min-height: 48vw !important;
+        }
+    }
+}
+
+/* El div externo con la descripcion de las jornadas
+   esta fuera de introduction
+ */
+#introduction .window div, #content > .window div {
+    align-content: center;
+    align-items: center;
+    display: flex;
     justify-content: center;
 }
 
-#charlas .talk-desc > div {
-    min-height: 30vh;
+#introduction .window p, #content > .window p {
+    padding: 5px 15px;
 }
 
-
-#charlas .talk-list {
-    /*min-height: 40vh;*/
-    align-items: center;
-    display: flex;
-}
-
-#dias-charlas li .nav-link.active {
-    background-color: #591728;
-    color: white !important;
-}
-
-.charla > div {
-    border: 10px solid transparent;
-    padding: 15px;
-    border-image: url(../images/charla-background.png) 20 fill;
-}
-
-.nav-charlas li .nav-link.active {
-    background-color: transparent !important;
-}
-
-.nav-charlas li .nav-link.active {
-    border: 10px solid transparent;
-    /*padding: 15px;*/
-    border-image: url(../images/charla-background-active.png) 10 fill;
-}
-
-.nav-charlas li .nav-link {
-    border: 10px solid transparent;
-    /*padding: 15px;*/
-    border-image: url(../images/charla-background-unactive.png) 10 fill;
-}
-
-#kenney {
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
-    color: white;
-}
-
-.aula::before, .nav-aula::before {
-    content: "Aula: ";
-    font-weight: bold;
-}
-
-.nav-aula {
-    margin-right: 12px;
-}
-
-/* ====== TALK TYPE CLASSES ====== */
-.talk-charla, .talk-taller {
-    display: inline-block;
-    border: 10px solid transparent;
-    border-radius: 3px;
-    font-weight: bold;
-    font-size: 85%;
-    margin-left: 10px;
-    vertical-align: middle;
-    horiz-align: center;
-}
-
-.talk-charla {
-    background-color: lightskyblue;
-}
-
-.talk-taller {
-    background-color: #ffbd42;
-}
-
-.talk-icon {
-    padding-right: 8px;
-}
-
-/* ====== SMALL TALK TYPE CLASSES (FOR THE NAVBAR) ====== */
-.talk-small {
-    display: flex;
-    align-items: center;
-    margin-left: 0;
-}
-
-.talk-small-icon {
-    padding-right: 0;
-}
-
-.nav-titulo {
+#descripcion-gul {
     display: flex;
     flex-direction: row;
-    column-gap: 10px;
+
+    margin: auto 5%;
+
+    @media (max-width: 730px) {
+        flex-direction: column;
+        margin: auto 1%;
+    }
+}
+
+#descripcion-gul img {
+    width: 8vw;
+
+    @media (max-width: 730px) {
+        display: none;
+    }
+}
+
+#introduction .window > iframe {
+    width: 100% !important;
+
+    /* No preguntes por que, simplemente disfruta */
+    /* Es por el titulo xd */
+    @media (min-width: 1200px) {
+        height: 90% !important;
+    }
+
+    @media (max-width: 1200px) {
+        height: 82% !important;
+    }
+}
+
+#creditos {
+    margin: auto auto 5px 5px;
+    font-size: 2rem;
+}
+
+/************* CHARLAS *************/
+#selector-dias {
+    width: 60%;
+    margin: 0.2rem auto;
+    align-content: center;
     align-items: center;
-}
+    justify-content: center;
+    display: flex;
 
-/* <<<<<<  MAIN SECTION SECTION END >>>>>> */
-.btn-primary {
-  background-color: rgb(0, 117, 176);
-}
-
-.text-title {
-  background-color: rgb(0, 117, 176);
-  color: #ffffff;
-}
-
-.text-desc {
-  text-align: justify;
-  padding: 20px;
-  background-color: #ffffff;
-}
-
-/* ======  MEDIA QUERY SECTION START ====== */
-
-@media screen and (max-width:1400px){
-}
-
-@media screen and (max-width: 992px) {
-  .nav-container-icon {
-    flex-direction: row !important;
-    justify-content: space-evenly;
-    padding-bottom: 10px;
-  }
-  .nav-container-text {
-    border-top: 1px solid #d7d8d8;
-  }
-  .nav-container-text > .nav-item {
-    text-align: center;
-  }
-  .nav-container-icon > .nav-item {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-@media screen and (max-width: 768px) {
-}
-
-@media screen and (max-width: 576px) {
-    #que-es, #charlas {
-        padding: 10% 0;
-    }
-
-    .charla {
-      margin-top: 5%;
-    }
-
-    #charlas .dia.active {
-        flex-flow: column-reverse;
+    @media (max-width: 730px) {
+        width: 100%;
     }
 }
 
-/* <<<<<<  MEDIA QUERY SECTION END >>>>>> */
+.botones-dias {
+    font-size: 25px !important;
+    padding: 0 6% !important;
+    margin: 0 auto 10px !important;
+
+    @media (max-width: 730px) {
+        font-size: 20px !important;
+        margin: 0 3px 10px !important;
+    }
+}
+
+/* ----------------------------- */
+
+.charlas-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+    height: fit-content;
+
+    font-size: 35px;
+}
+
+.charlas-diarias {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+
+    padding: 15px;
+
+    @media (max-width: 730px) {
+        flex-direction: column;
+        padding: 0;
+    }
+}
+
+.charlas-selector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 40%;
+
+    margin-right: auto;
+    padding: 2% 3%;
+
+    @media (max-width: 730px) {
+        width: auto;
+        margin: auto;
+        padding: 5% 0 0 0;
+    }
+}
+
+.charlas-selector label {
+    font-size: 25px;
+}
+
+.boton-charla {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 10px auto;
+
+    @media (max-width: 730px) {
+        width: 90%;
+        margin: auto auto 20px;
+    }
+}
+
+.boton-charla > label {
+    justify-content: left;
+    text-align: left;
+}
+
+.descripcion-titulo-btn {
+    margin-bottom: 10px;
+}
+
+/* ----------------------------- */
+
+.charlas-descripcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 60%;
+
+    margin: 20px 15px 20px auto;
+
+    @media (max-width: 730px) {
+        margin: 8px auto;
+        width: 90%;
+    }
+}
+
+.charlas-descripcion > p {
+    margin: 5px auto;
+}
+
+.descripcion-ponencia {
+    display: flex;
+    flex-direction: row;
+
+    @media (max-width: 730px) {
+        flex-direction: column;
+
+        /* La concha de su mare tiene que estar pegadita */
+        :last-child {
+            margin-left: 0 !important;
+        }
+    }
+}
+
+#inscripcion {
+    margin-top: 20px;
+    font-size: 2rem;
+}
+
+/************* COLABORACIONES *************/
+#colaboraciones {
+    display: flex;
+    flex-direction: column;
+}
+
+#colaboraciones > div {
+    display: flex;
+    flex-direction: row;
+
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 800px) {
+        flex-direction: column;
+    }
+}
+
+#colaboraciones img {
+    width: 30%;
+    margin: 15px 30px 15px;
+
+    @media (max-width: 800px) {
+        width: 80%;
+    }
+}
+
+
+/************* FOOTER *************/
+#footer {
+    margin: 0 auto auto auto;
+}
+
+#footer p {
+    margin: 0 auto 10px auto;
+    font-size: 2rem;
+}

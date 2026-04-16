@@ -1,506 +1,216 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <title>GUL - XXXV Jornadas Técnicas</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- ====== SEO ====== -->
-    <meta name="description" content="Edición XXXV de las Jornadas Técnicas del GUL.">
-    <meta property="og:title" content="GUL - XXXV Jornadas Técnicas" />
-    <meta property="og:url" content="https://jornadas.gul.es/" /> <!-- TODO me la he inventado la vdd xd -->
-    <meta property="og:image" content="static/images/logo_horizontal_gray.svg" />
-    <meta property="og:type" content="website"/>
-    <meta property="og:description" content="Edición XXXV de las Jornadas Técnicas del GUL." />
-    <meta property="og:locale" content="es_ES" />
-    <!-- ====== FAVICON ====== -->
-    <link rel="icon" href="static/images/favicon.png" />
-    <link rel="stylesheet" href="static/style/bootstrap/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="static/style/styles.css" />
-    <link rel="stylesheet" href="static/style/font-awesome-4.7.0/css/font-awesome.min.css"/>
-    <!-- ====== FONTS ====== -->
-    <link rel="stylesheet" href="static/style/fonts/gfonts.css"/>
-    <script type="text/javascript" src="static/js/jquery-3.6.0.min.js" defer></script>
-    <script type="text/javascript" src="static/style/bootstrap/js/bootstrap.min.js" defer></script>
-    <script type="text/javascript" src="static/js/script.js" defer></script>
-  </head>
-  <body>
-    <!-- ====== NAV SECTION ====== -->
-    <header id="nav-section">
-      <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container-fluid m-3 mt-0 mb-0">
-          <a class="navbar-brand" href="#animation-header" aria-current="page">
-            <img class="logo-nav" src="static/images/logo_horizontal_gray.svg" alt="Logo GUL"/>
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-            <ul class="navbar-nav nav-container-icon">
-              <li class="nav-item">
-                <a class="nav-link" target="_blank" href="https://cursos-gul.uc3m.es" title="Enlace a cursos-gul.uc3m.es">
-                  <img class="image-nav" src="static/images/icon/graduation-cap.svg" alt="Graduation icon"/>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" target="_blank" href="https://gul.uc3m.es/ftp" title="Enlace a gul.uc3m.es/ftp" aria-disabled="true">
-                  <img class="image-nav" src="static/images/icon/nextcloud.svg" alt="Nextcloud icon"/>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" target="_blank" href="https://gul.uc3m.es/zoe" title="Enlace a gul.uc3m.es/zoe" aria-disabled="true">
-                  <img class="image-nav" src="static/images/icon/zoe_icon.svg" alt="ZoE icon"/>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" target="_blank" href="https://gul.uc3m.es/radio" title="Enlace a gul.uc3m.es/radio" aria-disabled="true">
-                  <img class="image-nav" src="static/images/icon/radio.svg" alt="Radio icon"/>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" target="_blank" href="https://gul.uc3m.es" title="Enlace a gul.uc3m.es" aria-disabled="true">
-                  <img class="image-nav" src="static/images/icon/gul-lince.png" alt="GUL icon"/>
-                </a>
-              </li>
-            </ul>
+<head>
+	<title>GUL - XXXVI Jornadas Técnicas</title>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<!-- ====== SEO ====== -->
+	<meta name="description" content="Edición XXXVI de las Jornadas Técnicas del GUL.">
+	<meta property="og:title" content="GUL - XXXVI Jornadas Técnicas"/>
+	<meta property="og:url" content="https://gul.uc3m.es/jornadas"/>
+	<meta property="og:image" content="static/images/logo_horizontal_gray.svg"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:description" content="Edición XXXVI de las Jornadas Técnicas del GUL."/>
+	<meta property="og:locale" content="es_ES"/>
+	<!-- ====== FAVICON ====== -->
+	<link rel="icon" href="static/images/favicon.png"/>
+	<link rel="stylesheet" href="static/style/styles.css"/>
+	<!-- ====== FONTS ====== -->
+	<script type="text/javascript" src="static/js/script.js" defer></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!-- everything default and using `weight: 100` -->
+	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+	<!-- ====== LIBS ====== -->
+	<link rel="stylesheet" href="https://unpkg.com/@sakun/system.css"/>
+</head>
 
-            <ul class="navbar-nav nav-container-text">
-              <li class="nav-item">
-                <a class="nav-link" href="#que-es">
-                  Información
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#charlas">
-                  Charlas
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+<body>
 
-    <!-- ====== MAIN SECTION ====== -->
-    <main>
-      <!-- Bloque animación -->
-      <section id="animation-header">
-          <img class="d-none d-sm-block" src="static/images/banner.png" alt="Banner publicitario que dice: 'Del 11 al 14 de Abril'"/>
-          <img class="d-block d-sm-none" src="static/images/banner-mobile.png" alt="Banner publicitario que dice: 'Del 11 al 14 de Abril'"/>
-      </section>
+<div id="main-container" class="standard-dialog">
 
-      <section id="que-es" class="">
-        <div id="separador1" class="separador" alt="Imagen para separar visualmente las secciones. No es realmente relevante"></div>
-        <!--<img src="static/images/separador.png" id="separador-1" class="separator" />-->
-        <div class="row justify-content-center m-0 col-12 p-0 align-items-center">
-          <div class="col-lg-4 col-sm-12">
-            <div class="text-title text-center p-3">
-              <h3>¿Qué son?</h3>
-            </div>
-            <div class="text-desc border border-dark">
-              <p>
-                Son una serie de charlas y/o talleres relacionados con el Software Libre, Linux, la informática, la ingeniería... ¡Jornadas Técnicas!
-              </p>
-            </div>
-          </div>
-          <div id="pingu" class="d-flex align-items-center justify-content-center col-5 col-lg-2 col-sm-3">
-            <img class="" alt="Un pingüino bailando" src="static/images/tuxAnimated.gif"/>
-          </div>
-          <div id="" class="col-lg-4 col-sm-8 mt-sm-4">
-            <div class="text-title text-center p-3"></div>
-            <div class="text-desc border border-dark">
-                <img class="col-12 mb-4" alt="" src="static/images/logo_horizontal_gray.svg"/>
-                <p>
-                  Este año, las <b>XXXV Jornadas Técnicas del GUL</b>
-                  pondrán el foco en 7 charlas y talleres sobre diversos temas de informática.
-                </p>
-            </div>
-          </div>
-        </div>
-      </section>
+	<!--Mostrado para pantallas grandes-->
+	<ul id="shortcuts-container-big" role="menu-bar">
+		<li role="menu-item" tabindex="0" aria-haspopup="false">
+			<a target="_blank" href="https://gul.uc3m.es/"><img src="static/images/link.svg" alt="link" class="wb-icon">
+				Página principal</a></li>
+		<li role="menu-item" tabindex="0" aria-haspopup="false">
+			<a target="_blank" href="https://gul.uc3m.es/ftp"><img src="static/images/link.svg" alt="link" class="wb-icon">
+				Cloud FTP</a></li>
+		<li role="menu-item" tabindex="0" aria-haspopup="false">
+			<a target="_blank" href="https://gul.uc3m.es/jamon/"><img src="static/images/link.svg" alt="link" class="wb-icon">
+				GUL Jamón</a></li>
+		<li role="menu-item" tabindex="0" aria-haspopup="false">
+			<a target="_blank" href="https://gul.uc3m.es/zoe/"><img src="static/images/link.svg" alt="link" class="wb-icon">
+				GUL Zoe</a></li>
+		<li role="menu-item" tabindex="0" aria-haspopup="false">
+			<a target="_blank" href="https://gul.uc3m.es/radio/"><img src="static/images/link.svg" alt="link" class="wb-icon">
+				GUL Radio</a></li>
+	</ul>
 
-      <!-- ====== PARTICIPANTES ====== -->
+	<!--Version de movil-->
+	<ul id="shortcuts-container-small" role="menu-bar">
+		<li role="menu-item" tabindex="0" aria-haspopup="true">
+			<img src="static/images/arrow.svg" alt="arrow" class="wb-icon"> Nuestras páginas
+			<ul role="menu">
+				<li role="menu-item" tabindex="0" aria-haspopup="false">
+					<a target="_blank" href="https://gul.uc3m.es/"><img src="static/images/link.svg" alt="link" class="wb-icon">
+						Página principal</a></li>
+				<li role="menu-item" tabindex="0" aria-haspopup="false">
+					<a target="_blank" href="https://gul.uc3m.es/ftp"><img src="static/images/link.svg" alt="link"
+					                                                       class="wb-icon">
+						Cloud FTP</a></li>
+				<li role="menu-item" tabindex="0" aria-haspopup="false">
+					<a target="_blank" href="https://gul.uc3m.es/jamon/"><img src="static/images/link.svg" alt="link"
+					                                                          class="wb-icon">
+						GUL Jamón</a></li>
+				<li role="menu-item" tabindex="0" aria-haspopup="false">
+					<a target="_blank" href="https://gul.uc3m.es/zoe/"><img src="static/images/link.svg" alt="link"
+					                                                        class="wb-icon">
+						GUL Zoe</a></li>
+				<li role="menu-item" tabindex="0" aria-haspopup="false">
+					<a target="_blank" href="https://gul.uc3m.es/radio/"><img src="static/images/link.svg" alt="link"
+					                                                          class="wb-icon">
+						GUL Radio</a></li>
+			</ul>
+		</li>
+	</ul>
 
-      <!--<section id="participantes" class="col-12">
-          <h3 class="col-12 text-center mb-0">Colaboran...</h3>
-          <div class="row col-10 offset-1 text-center mb-4"><i>(Alfabéticamente)</i></div>
-          <div class="row col-10 offset-1 justify-content-center mt-4">
-              <div class="col-6 col-sm-4 col-md-2 text-center participante">
-                <a href="https://portalcientifico.upm.es/ipublic/profile/index/iMarinaID/04-309256/name/BLANCO%20MURILLO,%20JOSE%20LUIS" target="_blank">
-                  <img src="static/images/fotos_cartel/jose.png" alt="Foto de Jose Luis Blanco" class="bg-light col-12 col-sm-10 mb-2">
-                </a>
-                  <p>Jose Luis Blanco</p>
-              </div>
-              <div class="col-6 col-sm-4 col-md-2 text-center participante">
-                <a href="https://isi-cano.itch.io/" target="_blank">
-                  <img src="static/images/fotos_cartel/isi.png" alt="Foto de Isi Cano" class="col-12 col-sm-10 mb-2">
-                </a>
-                  <p>Isi Cano</p>
-              </div>
-              <div class="col-6 col-sm-4 col-md-2 text-center participante">
-                <a href="https://twitter.com/ami_diggory" target="_blank">
-                  <img src="static/images/fotos_cartel/bea.png" alt="Foto de Beatriz Castro" class="col-12 col-sm-10 mb-2">
-                </a>
-                  <p>Beatriz Castro</p>
-              </div>
-              <div class="col-6 col-sm-4 col-md-2 text-center participante">
-                <a href="https://www.linkedin.com/in/stanislas-dolcini-36236162/" target="_blank">
-                  <img src="static/images/fotos_cartel/stanislas.jpg" alt="Foto de Stanislas Dolcini" class="col-12 col-sm-10 mb-2">
-                </a>
-                  <p>Stanislas Dolcini</p>
-              </div>
-              <div class="col-6 col-sm-4 col-md-2 text-center participante">
-                <a href="http://twitter.com/rafalagoon" target="_blank">
-                  <img src="static/images/fotos_cartel/rafa.jpg" alt="Foto de Rafa Laguna" class="col-12 col-sm-10 mb-2">
-                </a>
-                  <p>Rafa Laguna</p>
-              </div>
-              <div class="col-6 col-sm-4 col-md-2 text-center participante">
-                <a href="https://twitter.com/reduzio" target="_blank">
-                  <img src="static/images/fotos_cartel/juan.jpg" alt="Foto de Juan Linietsky" class="col-12 col-sm-10 mb-2">
-                </a>
-                  <p>Juan Linietsky</p>
-              </div>
-              
-          </div>
-      </section>
-      -->
+	<div id="heading">
+		<h2>Jornadas Técnicas XXXVI</h2>
+		<h3>XX - XX de septiembre</h3>
+	</div>
 
-      <!-- ====== TIMETABLE ====== -->
+	<div id="content">
+		<div id="introduction">
 
-      <section id="charlas" class="">
-        <div id="separador2" class="separador" alt="Imagen para separar visualmente las secciones. No es realmente relevante"></div>
-        <!--<img src="static/images/separador2.png" id="separador-2" class="separator" alt="Imagen para separar visualmente las secciones. No es realmente relevante"/>-->
-        <div class="row justify-content-center m-0 col-12 p-0 align-items-center">
-          <div class="col-lg-9 col-sm-12">
-            <div class="text-title text-center p-3 mt-4">
-              <h3>Abril 2023</h3>
-            </div>
+			<div class="window">
+				<div class="title-bar">
+					<h1 class="title">Quienes somos</h1>
+				</div>
+				<div class="separator"></div>
+				<div id="descripcion-gul">
+					<img src="static/images/logo_horizontal.png" alt="logo-gul">
+					<p>
+						El Grupo de Usuarios de Linux de la Universidad Carlos III de Madrid, es una asociacion enfocada en el
+						software libre, y por supuesto, en el sistema operativo Linux. ¡Nos apasiona la tecnologia!
+					</p>
+				</div>
+			</div>
 
-            <div class="text-desc border border-dark">
-                <!-- ==== DAY SELECTOR ==== -->
-                <ul id="dias-charlas" class="nav nav-pills justify-content-center">
-                    <li class="nav-item">
-                      <button class="nav-link active" data-bs-toggle="tab" href="#martes">Martes 11</button>
-                    </li>
-                    <li class="nav-item">
-                      <button class="nav-link" data-bs-toggle="tab" href="#miercoles">Miércoles 12</button>
-                    </li>
-                    <li class="nav-item">
-                      <button class="nav-link" data-bs-toggle="tab" href="#jueves">Jueves 13</button>
-                    </li>
-                    <li class="nav-item">
-                        <button class="nav-link" data-bs-toggle="tab" href="#viernes">Viernes 14</button>
-                    </li>
-                </ul>
+			<div class="window">
+				<div class="title-bar">
+					<h1 class="title">Anteriores</h1>
+				</div>
+				<iframe src="https://www.youtube.com/embed/KhkrQXv0t-Q?si=Bfr0n_qcOYJLvmDP&amp;start=3560"
+				        title="YouTube video player" frameborder="0"
+				        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</div>
+		</div>
 
-                <!-- ======= DAY CONTENT ======= -->
-                <div class="tab-content">
-                    <!-- ======= MARTES ======= -->
-                    <div id="martes" class="dia tab-pane fade show active row pt-4" role="tabpanel">
-                        <div class="charla tab-content col-12 col-sm-8 talk-desc">
-                            <div id="charla-1-martes" class="row col-11 tab-pane fade show active" role="tabpanel">
-                                <h5 class="charla-titulo p-3">
-                                    Te has instalado Linux... ahora, ¿qué?
-                                    <span class="talk-taller"><i class="fa fa-wrench fa-lg talk-icon"></i>Taller</span>
-                                </h5>
-                                <div class="charla-ponente ps-3">
-                                    <a href="https://github.com/rajayonin/" target="_blank">Luis Daniel Casais</a> || 13:00 - 15:00
-                                    <p class="float-end aula">2.3.D04</p>
-                                </div>
-                                <hr>
-                                <div class="charla-desc ps-3 pe-3 pb-4">
-                                    Aprende a sacar el máximo partido de tu instalación de Linux.
-                                    <br><br>
-                                    <b>Requisitos técnicos:</b>
-                                    <ul>
-                                        <li>Linux instalado</li>
-                                    </ul>
-                                    <b>Requisitos materiales:</b>
-                                    <ul>
-                                        <li>Ordenador con Linux</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div id="charla-2-martes" class="row col-11 tab-pane fade" role="tabpanel">
-                                <h5 class="charla-titulo p-3">
-                                    Tiotéate. Aspectos a tener en cuenta en el diseño de una solución IoT
-                                    <span class="talk-charla"><i class="fa fa-bullhorn fa-lg talk-icon"></i>Charla</span>
-                                </h5>
-                                <div class="charla-ponente ps-3">
-                                    <a href="https://es.linkedin.com/in/alvarogarciabarcena" target="_blank">Álvaro García</a> || 18:00 - 19:30
-                                    <p class="float-end aula">2.3.D05</p>
-                                </div>
-                                <hr>
-                                <div class="charla-desc ps-3 pe-3 pb-4">
-                                    Consideraciones a tener en cuenta en el diseño de una solución IoT. Formato charla/debate.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-4 talk-list justify-content-center">
-                            <ul class="nav-charlas nav nav-pills row gy-sm-5 gy-3 col-12 col-sm-11">
-                                <li class="nav-item">
-                                    <div class="p-0 nav-link active" data-bs-toggle="tab" href="#charla-1-martes">
-                                        <div class="nav-titulo ps-3 pe-3">
-                                            <span class="talk-taller talk-small"><i class="fa fa-wrench fa-lg talk-small-icon"></i></span>
-                                            Te has instalado Linux... ahora, ¿qué?
-                                        </div>
-                                        <hr class="m-2">
-                                        <div class="nav-hora ps-3">13:00 - 15:00
-                                            <p class="float-end nav-aula">2.3.D04</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="nav-item">
-                                    <div class="p-0 nav-link" data-bs-toggle="tab" href="#charla-2-martes">
-                                        <div class="nav-titulo ps-3 pe-3">
-                                            <span class="talk-charla talk-small"><i class="fa fa-bullhorn fa-lg talk-small-icon"></i></span>
-                                            Tiotéate. Aspectos a tener en cuenta en el diseño de una solución IoT
-                                        </div>
-                                        <hr class="m-2">
-                                        <div class="nav-hora ps-3">18:00 - 19:30
-                                            <p class="float-end nav-aula">2.3.D05</p>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+		<div class="window">
+			<div class="title-bar">
+				<h1 class="title">¿Jornadas?</h1>
+			</div>
+			<div class="separator"></div>
+			<p>
+				Son una serie de charlas y/o talleres relacionados con el Software Libre,
+				Linux, la informatica, la ingenieria... ¡Jornadas Tecnicas!<br> <b>¡No te olvides de inscribir a las charlas que
+				quieras asistir con el boton de abajo!</b>
+			</p>
+		</div>
 
-                    <!-- ======= MIÉRCOLES ======= -->
-                    <div id="miercoles" class="dia tab-pane fade row pt-4" role="tabpanel">
-                        <div class="charla tab-content col-12 col-sm-8 talk-desc">
-                            <div id="charla-1-miercoles" class="row col-11 tab-pane fade show active" role="tabpanel">
-                                <h5 class="charla-titulo p-3">
-                                    Monta un laboratorio de informática, en "dos patadas"... (ironic mode on)
-                                    <span class="talk-charla"><i class="fa fa-bullhorn fa-lg talk-icon"></i>Charla</span>
-                                </h5>
-                                <div class="charla-ponente ps-3">
-                                    <a href="https://www.lab.inf.uc3m.es/" target="_blank">Jaime Pons</a> || 13:00 - 14:00
-                                    <p class="float-end aula">7.1.J07</p>
-                                </div>
-                                <hr>
-                                <div class="charla-desc ps-3 pe-3 pb-4">
-                                    Desgranar paso a paso los servicios que se necesitan para montar un laboratorio de informática:
-                                    Servidores, virtualización, servicios (web, cuentas y almacenamiento, autenticación, correo),
-                                    monitorización y clientes.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-4 talk-list justify-content-center">
-                            <ul class="nav-charlas nav nav-pills row gy-sm-5 gy-3 col-12 col-sm-11">
-                                <li class="nav-item">
-                                    <div class="p-0 nav-link active" data-bs-toggle="tab" href="#charla-1-miercoles">
-                                        <div class="nav-titulo ps-3 pe-3">
-                                            <span class="talk-charla talk-small"><i class="fa fa-bullhorn fa-lg talk-small-icon"></i></span>
-                                            Monta un laboratorio de informática, en "dos patadas"... (ironic mode on)
-                                        </div>
-                                        <hr class="m-2">
-                                        <div class="nav-hora ps-3">13:00 - 14:00
-                                            <p class="float-end nav-aula">7.1.J07</p>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+	</div>
 
-                    <!-- ======= JUEVES ======= -->
-                    <div id="jueves" class="dia tab-pane fade row pt-4" role="tabpanel">
-                        <div class="charla tab-content col-12 col-sm-8 talk-desc">
-                            <div id="charla-1-jueves" class="row col-11 tab-pane fade show active" role="tabpanel">
-                                <h5 class="charla-titulo p-3">
-                                    ¡Virtualízame ésta! Primeros pasos con CloudStack
-                                    <span class="talk-taller"><i class="fa fa-wrench fa-lg talk-icon"></i>Taller</span>
-                                </h5>
-                                <div class="charla-ponente ps-3">
-                                    <a href="https://www.lab.inf.uc3m.es/" target="_blank">Óscar Pérez</a> || 11:00 - 12:30
-                                    <p class="float-end aula">2.3.A05</p>
-                                </div>
-                                <hr>
-                                <div class="charla-desc ps-3 pe-3 pb-4">
-                                    Introducción a la instalación y configuración de CS. Administración de infraestructura.
-                                    Creación de proyectos, ISOS, instancias y configuración de accesos.
-                                    <br><br>
-                                    <b>Requisitos técnicos:</b>
-                                    <ul>
-                                        <li>Linux nivel administrador básico y conocimiento básico de redes TCP/IP</li>
-                                    </ul>
-                                    <b>Requisitos materiales:</b>
-                                    <ul>
-                                        <li>Ordenador</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div id="charla-2-jueves" class="row col-11 tab-pane fade" role="tabpanel">
-                                <h5 class="charla-titulo p-3">
-                                    NixOS - Linux dentro de 10 años
-                                    <span class="talk-charla"><i class="fa fa-bullhorn fa-lg talk-icon"></i>Charla</span>
-                                </h5>
-                                <div class="charla-ponente ps-3">
-                                  <a href="https://baitinq.ml/" target="_blank">Manuel Palenzuela</a> || 13:00 - 13:30
-                                  <p class="float-end aula">7.1.J07</p>
-                                </div>
-                                <hr>
-                                <div class="charla-desc ps-3 pe-3 pb-4">
-                                    Explora las características únicas de <a href="https://nixos.org/" target="_blank">NixOS</a>,
-                                    la distribución Linux del futuro que revolucioná la gestión de paquetes y la configuración del sistema operativo.
-                                    <br><br>
-                                    <b>Requisitos técnicos:</b>
-                                    <ul>
-                                        <li>Linux instalado</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-4 talk-list justify-content-center">
-                            <ul class="nav-charlas nav nav-pills row gy-sm-5 gy-3 col-12 col-sm-11">
-                                <li class="nav-item">
-                                    <div class="p-0 nav-link active" data-bs-toggle="tab" href="#charla-1-jueves">
-                                        <div class="nav-titulo ps-3 pe-3">
-                                            <span class="talk-taller talk-small"><i class="fa fa-wrench fa-lg talk-small-icon"></i></span>
-                                            ¡Virtualízame ésta! Primeros pasos con CloudStack
-                                        </div>
-                                        <hr class="m-2">
-                                        <div class="nav-hora ps-3">11:00 - 12:30
-                                            <p class="float-end nav-aula">2.3.A05</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="nav-item">
-                                    <div class="p-0 nav-link" data-bs-toggle="tab" href="#charla-2-jueves">
-                                        <div class="nav-titulo ps-3 pe-3">
-                                            <span class="talk-charla talk-small"><i class="fa fa-bullhorn fa-lg talk-small-icon"></i></span>
-                                            NixOS - Linux dentro de 10 años
-                                        </div>
-                                        <hr class="m-2">
-                                        <div class="nav-hora ps-3">13:00 - 13:30
-                                            <p class="float-end nav-aula">7.1.J07</p>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+	<!--	<div id="creditos">-->
+	<!--		Sitio hecho con la libreria grafica de <a href="https://github.com/sakofchit/system.css/">system.css</a> <3-->
+	<!--	</div>-->
+</div>
 
-                    <!-- ======= VIERNES ======= -->
-                    <div id="viernes" class="dia tab-pane fade row pt-4" role="tabpanel">
-                        <div class="charla tab-content col-12 col-sm-8 talk-desc">
-                            <div id="charla-1-viernes" class="row col-11 tab-pane fade show active" role="tabpanel">
-                                <h5 class="charla-titulo p-3">
-                                    G.I.M.P.: GIMP Is (for) Meme Production
-                                    <span class="talk-taller"><i class="fa fa-wrench fa-lg talk-icon"></i>Taller</span>
-                                </h5>
-                                <div class="charla-ponente ps-3">
-                                    <a href="https://github.com/rajayonin/" target="_blank">Luis Daniel Casais</a> || 13:00 - 14:30
-                                    <p class="float-end aula">2.3.D04</p>
-                                </div>
-                                <hr>
-                                <div class="charla-desc ps-3 pe-3 pb-4">
-                                    Taller básico de GIMP, un software Open-source para la edición de imágenes, aplicándolo a memes.
-                                    <br><br>
-                                    <b>Requisitos materiales:</b>
-                                    <ul>
-                                        <li>Ordenador</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div id="charla-2-viernes" class="row col-11 tab-pane fade" role="tabpanel">
-                                <h5 class="charla-titulo p-3">
-                                    Docker y DevOps
-                                    <span class="talk-charla"><i class="fa fa-bullhorn fa-lg talk-icon"></i>Charla</span>
-                                </h5>
-                                <div class="charla-ponente ps-3">
-                                    <a target="_blank">Lisardo Prieto</a> || 17:30 - 19:00
-                                    <p class="float-end aula">2.3.D04</p>
-                                </div>
-                                <hr>
-                                <div class="charla-desc ps-3 pe-3 pb-4">
-                                    Charla sobre las tecnologías de Docker y DevOps.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-4 talk-list justify-content-center">
-                            <ul class="nav-charlas nav nav-pills row gy-sm-5 gy-3 col-12 col-sm-11">
-                                <li class="nav-item">
-                                    <div class="p-0 nav-link active" data-bs-toggle="tab" href="#charla-1-viernes">
-                                        <div class="nav-titulo ps-3 pe-3">
-                                            <span class="talk-taller talk-small"><i class="fa fa-wrench fa-lg talk-small-icon"></i></span>
-                                            G.I.M.P.: GIMP Is (for) Meme Production
-                                        </div>
-                                        <hr class="m-2">
-                                        <div class="nav-hora ps-3">13:00 - 14:30
-                                            <p class="float-end nav-aula">2.3.D04</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="nav-item">
-                                    <div class="p-0 nav-link" data-bs-toggle="tab" href="#charla-2-viernes">
-                                        <div class="nav-titulo ps-3 pe-3">
-                                            <span class="talk-charla talk-small"><i class="fa fa-bullhorn fa-lg talk-small-icon"></i></span>
-                                            Docker y DevOps
-                                        </div>
-                                        <hr class="m-2">
-                                        <div class="nav-hora ps-3">17:30 - 19:00
-                                            <p class="float-end nav-aula">2.3.D04</p>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+<div id="horario-evento" class="standard-dialog">
 
-                <!-- <div class="text-center p-2">
-                  <a href="https://cloud.gul.es/s/5dcqQJoAt4HAfEm/download"><button class="btn btn-primary">
-                      Bájate aquí el horario
-                  </button></a>
-                </div> -->
+	<div id="selector-dias">
+		<button id="boton-dia1" class="btn botones-dias">
+			Dia 1
+		</button>
+		<button id="boton-dia2" class="btn botones-dias">
+			Dia 2
+		</button>
+		<button id="boton-dia3" class="btn botones-dias">
+			Dia 3
+		</button>
+		<button id="boton-dia4" class="btn botones-dias">
+			Dia 4
+		</button>
+	</div>
 
-                <!-- <div class="text-center p-2">
-                  <a>¿Te la perdiste?</a>
-                  <br>
-                  <a href="https://www.youtube.com/playlist?list=PLLNvaWzBWm4YkRMo2JuI5O-6ihES5JD3o">
-                    <button class="btn btn-primary">
-                      Charlas grabadas
-                    </button>
-                  </a>
-                </div> -->
-            </div>
-          </div>
-        </div>
-        <small id="kenney">
-          Imágenes por <b><a class="no-style" href="https://kenney.nl/" target="_blank">Kenney</a></b>
-        </small>
-      </section>
+	<div class="charlas-container outer-border">
 
-      <!-- ==== Parte legal ==== -->
-      <footer id="legal-section" class="border-top border-dark">
-        <div class="text-desc text-center">
-          <p>
-            <!-- iconos -->
-            <a target="_blank" aria-current="false" href="https://twitter.com/guluc3m" title="Enlace a Twitter">
-                <img class="image-nav" src="static/images/icon/twitter.svg" alt="Twitter icon"/></a> <!-- Está en la misma línea porque si no el HTML mete un espacio en blanco -->
-            <a target="_blank" href="https://github.com/guluc3m" title="Enlace a Github" aria-current="false">
-              <img class="image-nav" src="static/images/icon/github.svg" alt="Github icon"/></a>
-            <a target="_blank" href="https://youtube.com/c/guluc3m" title="Enlace a YouTube" aria-current="false">
-              <img class="image-nav" src="static/images/icon/youtube.svg" alt="YouTube icon"/></a>
-          </p>
-          <p>
-            El Grupo de Usuarios de Linux de la Universidad Carlos III de Madrid es una asociación
-            declarada de beneficio social por el Ministerio de Hacienda.
-          </p>
-          <p>
-            Domicilio social: Despacho 2.3.C05 del edificio Sabatini. Avenida de la Universidad, 30, 28911 Leganés, Madrid, España.
-          </p>
-          <p>
-            C.I.F.: G83296988<br>
-            Número de registro de la comunidad de Madrid: 23500<br>
-            Número de registro del ayuntamiento de Leganés: 795
-          </p>
-          <a href="https://cloud-gul.uc3m.es/s/s5TRM78die8rdAc" target="_blank" title="link a los estatutos" class="no-style">Estatutos</a> | <a href="https://cloud-gul.uc3m.es/s/f8ALGXstCpJa5Lc" target="_blank" title="link al código de conducta" class="no-style">Código de Conducta</a>
-        </div>
-      </footer>
-    </main>
-  </body>
+		<div id="charlas-dia" class="charlas-diarias inner-border">
+
+			<div class="charlas-selector">
+				<button class="boton-charla btn" id="btn_ch1">
+					<label class="descripcion-titulo-btn"></label>
+					<label class="descripcion-ponencia-btn">
+						<label></label>
+					</label>
+				</button>
+
+				<button class="boton-charla btn" id="btn_ch2">
+					<label class="descripcion-titulo-btn"></label>
+					<label class="descripcion-ponencia-btn">
+						<label></label>
+					</label>
+				</button>
+			</div>
+
+			<div class="charlas-descripcion">
+				<div class="descripcion-titulo title"></div>
+				<div class="descripcion-ponencia">
+					<div style="margin-right:auto"></div>
+					<div style="margin-left:auto"></div>
+				</div>
+				<hr style="width:100%">
+				<p class="descripcion-info"></p>
+
+				<a href="https://ftp.z4na14.dev/rickroll.webm" target="_blank" class="btn" id="inscripcion">Inscribirme!</a>
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+<div id="colaboraciones" class="standard-dialog">
+	<h1>En colaboración con:</h1>
+	<div>
+		<img src="static/images/press_kit/Informatica-esp.jpg"
+		>
+		<img src="static/images/press_kit/dd_logo_h_rgb.svg"
+		     alt="Datadog logo">
+	</div>
+</div>
+
+<div id="footer" class="standard-dialog center scale-down">
+	<div class="text-desc text-center">
+		<h1 class="dialog-text">Jornadas Técnicas XXXVI</h1>
+		<p class="dialog-text">
+			El Grupo de Usuarios de Linux de la Universidad Carlos III de Madrid es una asociacion declarada de
+			beneficio
+			social por el Ministerio de Hacienda.
+		</p>
+		<p class="dialog-text">
+			C.I.F.: G83296988<br>
+			Numero de registro de la comunidad de Madrid: 23500<br>
+			Numero de registro del ayuntamiento de Leganes: 795
+		</p>
+	</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script type="module" src="static/js/script.js"></script>
+<script type="module" src="static/js/charlas.js"></script>
+</body>
 </html>
