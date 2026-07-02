@@ -339,7 +339,16 @@ body > div {
 
 
 /* ----------------------------- */
+.ponente-social {
+    font-size: 1.4rem !important; /* Más pequeño que el nombre */
+    font-family: Geneva_9, cursive;
+    color: rgb(92, 92, 255) !important; /* O el color que prefieras para links */
+}
 
+.ponente-social:hover {
+    background-color: black;
+    color: white !important;
+}
 .charlas-descripcion {
     display: flex;
     flex-direction: column;
