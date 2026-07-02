@@ -245,11 +245,22 @@ body > div {
     font-size: 25px !important;
     padding: 0 6% !important;
     margin: 0 auto 10px !important;
+    transition: background-color 0.1s ease, color 0.3s ease;
 
     @media (max-width: 730px) {
         font-size: 20px !important;
         margin: 0 3px 10px !important;
     }
+}
+
+.botones-dias:hover {
+    background-color: #eeeeee !important;
+    cursor: pointer;
+}
+
+.botones-dias.active {
+    background-color: black !important;
+    color: white !important;
 }
 
 /* ----------------------------- */
@@ -321,6 +332,12 @@ body > div {
     margin-bottom: 10px;
 }
 
+.boton-charla:hover {
+    background-color: #eeeeee;
+    cursor: pointer !important;
+}
+
+
 /* ----------------------------- */
 
 .charlas-descripcion {
@@ -360,6 +377,11 @@ body > div {
     font-size: 2rem;
 }
 
+#inscripcion:hover {
+    background-color: #eeeeee;
+    cursor: pointer !important;
+}
+
 /************* COLABORACIONES *************/
 #colaboraciones {
     display: flex;
@@ -394,7 +416,12 @@ body > div {
     margin: 0 auto auto auto;
 }
 
+#footer .dialog-text {
+    font-size: 1.4rem !important;
+    margin-bottom: 8px !important;
+}
+
 #footer p {
     margin: 0 auto 10px auto;
-    font-size: 2rem;
+    font-size: 1rem;
 }
