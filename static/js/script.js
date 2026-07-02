@@ -60,7 +60,13 @@ function showDay(dayIndex) {
   console.log(current_day);
 
   document.querySelectorAll(".botones-dias").forEach((b, i) => {
-    b.classList.toggle("active", i === dayIndex);
+    if (i == dayIndex) {
+      b.classList.toggle("active", true);
+      b.disabled = true;
+    } else {
+      b.classList.toggle("active", false);
+      b.disabled = false;
+    }
   });
 
   fillSelectorButtons(dayIndex);

@@ -15,11 +15,13 @@
     }
 }
 
-.title-bar, .separator {
+.title-bar,
+.separator {
     min-width: 100%;
 }
 
-p, .paragraph {
+p,
+.paragraph {
     font-family: Geneva_9, cursive;
     font-size: 2rem !important;
 }
@@ -52,7 +54,6 @@ body > div {
         margin: 2vh auto;
     }
 }
-
 
 #main-container {
     display: flex;
@@ -177,14 +178,16 @@ body > div {
 /* El div externo con la descripcion de las jornadas
    esta fuera de introduction
  */
-#introduction .window div, #content > .window div {
+#introduction .window div,
+#content > .window div {
     align-content: center;
     align-items: center;
     display: flex;
     justify-content: center;
 }
 
-#introduction .window p, #content > .window p {
+#introduction .window p,
+#content > .window p {
     padding: 5px 15px;
 }
 
@@ -245,22 +248,11 @@ body > div {
     font-size: 25px !important;
     padding: 0 6% !important;
     margin: 0 auto 10px !important;
-    transition: background-color 0.1s ease, color 0.3s ease;
 
     @media (max-width: 730px) {
         font-size: 20px !important;
         margin: 0 3px 10px !important;
     }
-}
-
-.botones-dias:hover {
-    background-color: #eeeeee !important;
-    cursor: pointer;
-}
-
-.botones-dias.active {
-    background-color: black !important;
-    color: white !important;
 }
 
 /* ----------------------------- */
@@ -332,23 +324,11 @@ body > div {
     margin-bottom: 10px;
 }
 
-.boton-charla:hover {
-    background-color: #eeeeee;
-    cursor: pointer !important;
-}
-
-
 /* ----------------------------- */
 .ponente-social {
-    font-size: 1.4rem !important; /* Más pequeño que el nombre */
-    font-family: Geneva_9, cursive;
-    color: rgb(92, 92, 255) !important; /* O el color que prefieras para links */
+    font-size: 1.6rem !important; /* Más pequeño que el nombre */
 }
 
-.ponente-social:hover {
-    background-color: black;
-    color: white !important;
-}
 .charlas-descripcion {
     display: flex;
     flex-direction: column;
@@ -386,11 +366,6 @@ body > div {
     font-size: 2rem;
 }
 
-#inscripcion:hover {
-    background-color: #eeeeee;
-    cursor: pointer !important;
-}
-
 /************* COLABORACIONES *************/
 #colaboraciones {
     display: flex;
@@ -418,7 +393,6 @@ body > div {
         width: 80%;
     }
 }
-
 
 /************* FOOTER *************/
 #footer {
