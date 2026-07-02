@@ -15,11 +15,13 @@
     }
 }
 
-.title-bar, .separator {
+.title-bar,
+.separator {
     min-width: 100%;
 }
 
-p, .paragraph {
+p,
+.paragraph {
     font-family: Geneva_9, cursive;
     font-size: 2rem !important;
 }
@@ -52,7 +54,6 @@ body > div {
         margin: 2vh auto;
     }
 }
-
 
 #main-container {
     display: flex;
@@ -177,14 +178,16 @@ body > div {
 /* El div externo con la descripcion de las jornadas
    esta fuera de introduction
  */
-#introduction .window div, #content > .window div {
+#introduction .window div,
+#content > .window div {
     align-content: center;
     align-items: center;
     display: flex;
     justify-content: center;
 }
 
-#introduction .window p, #content > .window p {
+#introduction .window p,
+#content > .window p {
     padding: 5px 15px;
 }
 
@@ -322,6 +325,9 @@ body > div {
 }
 
 /* ----------------------------- */
+.ponente-social {
+    font-size: 1.6rem !important; /* Más pequeño que el nombre */
+}
 
 .charlas-descripcion {
     display: flex;
@@ -388,13 +394,17 @@ body > div {
     }
 }
 
-
 /************* FOOTER *************/
 #footer {
     margin: 0 auto auto auto;
 }
 
+#footer .dialog-text {
+    font-size: 1.4rem !important;
+    margin-bottom: 8px !important;
+}
+
 #footer p {
     margin: 0 auto 10px auto;
-    font-size: 2rem;
+    font-size: 1rem;
 }
