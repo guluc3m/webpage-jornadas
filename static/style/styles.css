@@ -43,7 +43,7 @@ p,
     align-content: center;
 }
 
-body > div {
+body>div {
     @media (max-width: 1200px) {
         width: 90%;
         margin: 1vh auto;
@@ -179,7 +179,7 @@ body > div {
    esta fuera de introduction
  */
 #introduction .window div,
-#content > .window div {
+#content>.window div {
     align-content: center;
     align-items: center;
     display: flex;
@@ -187,7 +187,7 @@ body > div {
 }
 
 #introduction .window p,
-#content > .window p {
+#content>.window p {
     padding: 5px 15px;
 }
 
@@ -211,7 +211,7 @@ body > div {
     }
 }
 
-#introduction .window > iframe {
+#introduction .window>iframe {
     width: 100% !important;
 
     /* No preguntes por que, simplemente disfruta */
@@ -315,7 +315,7 @@ body > div {
     }
 }
 
-.boton-charla > label {
+.boton-charla>label {
     justify-content: left;
     text-align: left;
 }
@@ -326,7 +326,8 @@ body > div {
 
 /* ----------------------------- */
 .ponente-social {
-    font-size: 1.6rem !important; /* Más pequeño que el nombre */
+    font-size: 1.6rem !important;
+    /* Más pequeño que el nombre */
 }
 
 .charlas-descripcion {
@@ -343,7 +344,7 @@ body > div {
     }
 }
 
-.charlas-descripcion > p {
+.charlas-descripcion>p {
     margin: 5px auto;
 }
 
@@ -372,7 +373,7 @@ body > div {
     flex-direction: column;
 }
 
-#colaboraciones > div {
+#colaboraciones>div {
     display: flex;
     flex-direction: row;
 
@@ -386,11 +387,11 @@ body > div {
 }
 
 #colaboraciones img {
-    width: 30%;
+    width: 25%;
     margin: 15px 30px 15px;
 
     @media (max-width: 800px) {
-        width: 80%;
+        width: 75%;
     }
 }
 
